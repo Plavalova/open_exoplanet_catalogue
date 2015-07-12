@@ -1,4 +1,5 @@
-#!/usr/bin/python
+#!/usr/bin/env python
+# this is a wicked script
 import xml.etree.ElementTree as ET
 import glob
 import os
@@ -6,9 +7,10 @@ import hashlib
 import sys
 import datetime
 import re
+import math
 
-num_format = re.compile(r'^\-?[0-9]*\.?[0-9]*e?[\-\+]?[0-9]?[0-9]?$')
-
+num_format = re.compile(r'^\-?[0-9]*\.?[0-9]*e?[\-\+]?[0-9]?[0-9]?$') # This one is wrong
+num_format = re.compile(r'^[+\-]?\d*\.?\d+(?:[eE][-+]?\d+)?')
 
 # Variables to keep track of progress
 fileschecked = 0
@@ -29,6 +31,7 @@ def md5_for_file(f, block_size=2 ** 20):
 
 
 # Nicely indents the XML output
+# There is no good reason, not tu use BeautifulSoup and prettyfy method
 def indent(elem, level=0):
     i = "\n" + level * "\t"
     if len(elem):
@@ -45,40 +48,37 @@ def indent(elem, level=0):
             elem.tail = i
 
 
+ATTRIBUTE_MAPPING = {
+    'ep': ('errorplus',),
+    'em': ('errorminus',),
+    'error': ('errorplus', 'errorminus'),
+    'e': ('errorplus', 'errorminus'),
+}
+
+
+def remap_attribute(element):
+    for attribute_for_rename in set(element.attrib.keys()).intersection(ATTRIBUTE_MAPPING.keys()):
+        for new_attribute_name in ATTRIBUTE_MAPPING[attribute_for_rename]:
+            element.attrib[new_attribute_name] = element.attrib[attribute_for_rename]
+        del element.attrib[attribute_for_rename]
+
 # Removes empty nodes from the tree
 def removeemptytags(elem):
     if elem.text:
         elem.text = elem.text.strip()
     toberemoved = []
     for child in elem:
-        if len(child) == 0 and child.text is None and len(child.attrib) == 0:
+        if len(child) == 0 and not child.text and len(child.attrib) == 0:
             toberemoved.append(child)
     for child in toberemoved:
         elem.remove(child)
     for child in elem:
         removeemptytags(child)
-        # Convert error to errorminus and errorplus
-    if 'ep' in elem.attrib:
-        err = elem.attrib['ep']
-        del elem.attrib['ep']
-        elem.attrib['errorplus'] = err
-    if 'em' in elem.attrib:
-        err = elem.attrib['em']
-        del elem.attrib['em']
-        elem.attrib['errorminus'] = err
-    if 'error' in elem.attrib:
-        err = elem.attrib['error']
-        del elem.attrib['error']
-        elem.attrib['errorminus'] = err
-        elem.attrib['errorplus'] = err
-    if 'e' in elem.attrib:
-        err = elem.attrib['e']
-        del elem.attrib['e']
-        elem.attrib['errorminus'] = err
-        elem.attrib['errorplus'] = err
+    remap_attribute(elem)
 
 # Check if an unknown tag is present (most likely an indication for a typo)
-validtags = [
+# This is useless, until *.xsd is in use
+validtags = {
     "system", "name", "new", "description", "ascendingnode", "discoveryyear",
     "lastupdate", "list", "discoverymethod", "semimajoraxis", "period", "magV", "magJ",
     "magH", "magR", "magB", "magK", "magI", "magU", "distance",
@@ -86,16 +86,16 @@ validtags = [
     "metallicity", "inclination", "spectraltype", "binary", "planet", "periastron", "star",
     "mass", "eccentricity", "radius", "temperature", "videolink", "transittime", 
     "spinorbitalignment", "istransiting", "separation", "positionangle", "periastrontime",
-    "meananomaly"]
-validattributes = [
+    "meananomaly", "minimal-code"}
+validattributes = {
     "error",
     "errorplus",
     "errorminus",
     "unit",
     "upperlimit",
     "lowerlimit",
-    "type"]
-validlists = [
+    "type"}
+validlists = {
     "Confirmed planets",
     "Planets in binary systems, S-type",
     "Controversial",
@@ -103,15 +103,15 @@ validlists = [
     "Planets in binary systems, P-type",
     "Kepler Objects of Interest",
     "Solar System",
-    "Retracted planet candidate"]
-validdiscoverymethods = ["RV", "transit", "timing", "imaging", "microlensing"]
-tagsallowmultiple = ["list", "name", "planet", "star", "binary", "separation"]
-numerictags = ["mass", "radius", "ascnedingnode", "discoveryyear", "semimajoraxis", "period",
+    "Retracted planet candidate"}
+validdiscoverymethods = {"RV", "transit", "timing", "imaging", "microlensing"}
+tagsallowmultiple = {"list", "name", "planet", "star", "binary", "separation"}
+numerictags = {"mass", "radius", "ascnedingnode", "discoveryyear", "semimajoraxis", "period",
     "magV", "magJ", "magH", "magR", "magB", "magK", "magI", "magU", "distance", "longitude", "age",
     "metallicity", "inclination", "periastron", "eccentricity", "temperature", "transittime",
-    "spinorbitalignment", "separation", "positionangle", "periastrontime", "meananomaly"]
-numericattributes = ["error", "errorplus", "errorminus", "upperlimit", "lowerlimit"]
-nonzeroattributes = ["error", "errorplus", "errorminus"]
+    "spinorbitalignment", "separation", "positionangle", "periastrontime", "meananomaly"}
+numericattributes = {"error", "errorplus", "errorminus", "upperlimit", "lowerlimit"}
+nonzeroattributes = {"error", "errorplus", "errorminus"}
 
 
 def checkforvalidtags(elem):
@@ -126,6 +126,7 @@ def checkforvalidtags(elem):
                 if not re.match(num_format,elem.attrib[a]):
                     return elem.tag
     for child in elem:
+        # I think it could be much better subtitue it with stack
         _tmp = checkforvalidtags(child)
         if _tmp:
             problematictag = _tmp
@@ -140,14 +141,23 @@ def checkforvaliderrors(elem):
     problematictag = None
     if elem.tag in numerictags:
         deleteattribs = []
-        for a in elem.attrib:
-            if a in nonzeroattributes:
-                try:
-                    if len(elem.attrib[a])==0 or float(elem.attrib[a])==0.:
-                        deleteattribs.append(a)
-                except:
-                    print "Warning: problem reading error bars in tag "+elem.tag
-                    return 1
+        for a in nonzeroattributes:
+            try:
+                if a in elem.attrib and (not elem.attrib[a] or float(elem.attrib[a]) == 0.):
+                    deleteattribs.append(a)
+            except ValueError as e:
+                print "Warning probrem reading error bars in tag " + elem.tag
+                print e
+                deleteattribs.append(a) # It's rubbish
+        #
+        # for a in elem.attrib:
+        #     if a in nonzeroattributes:
+        #         try:
+        #             if len(elem.attrib[a])==0 or float(elem.attrib[a])==0.:
+        #                 deleteattribs.append(a)
+        #         except:
+        #             print "Warning: problem reading error bars in tag "+elem.tag
+        #             return 1
         for a in deleteattribs:
             print "Warning: deleting error bars with value 0 in tag "+elem.tag
             del elem.attrib[a]
@@ -167,8 +177,13 @@ def checkforvaliderrors(elem):
 
 # Convert units (makes data entry easier)
 def convertunitattrib(elem, attribname, factor):
-    if attribname in elem.attrib:
-        elem.attrib[attribname] = "%f" % ( float(elem.attrib[attribname]) * factor)
+    if not hasattr(attribname, '__iter__'):
+        attribname = {attribname,}
+    for attrib in set(attribname).intersection(elem.attrib.keys()):
+        elem.attrib[attrib] = "%f" % (float(elem.attrib[attrib]) * factor)
+
+
+UNIT_CONVERSION_SET = {'e', 'error', 'errorplus', 'errorminus', 'ep', 'em', 'upperlimit', 'lowerlimit'}
 
 
 def convertunit(elem, factor):
@@ -176,14 +191,7 @@ def convertunit(elem, factor):
     del elem.attrib['unit']
     if elem.text:
         elem.text = "%f" % (float(elem.text) * factor)
-    convertunitattrib(elem, "e", factor)
-    convertunitattrib(elem, "error", factor)
-    convertunitattrib(elem, "errorplus", factor)
-    convertunitattrib(elem, "errorminus", factor)
-    convertunitattrib(elem, "ep", factor)
-    convertunitattrib(elem, "em", factor)
-    convertunitattrib(elem, "upperlimit", factor)
-    convertunitattrib(elem, "lowerlimit", factor)
+    convertunitattrib(elem, UNIT_CONVERSION_SET, factor)
 
 
 def checkForBinaryPlanet(root, criteria, liststring):
@@ -193,7 +201,7 @@ def checkForBinaryPlanet(root, criteria, liststring):
     planets = root.findall(criteria)
     for planet in planets:
         plists = planet.findall(".//list")
-        if liststring not in [plist.text for plist in plists]:
+        if liststring not in {plist.text for plist in plists}:
             ET.SubElement(planet, "list").text = liststring
             print "Added '" + filename + "' to list '" + liststring + "'."
             fileschanged += 1
@@ -232,131 +240,249 @@ def checkForTransitingPlanets(root):
                 fileschanged += 1
 
 
+def average_dyson_temperature(eccentricity, distance, star_temperature, star_radius):
+    """
+    Calculate average Dyson temperature for planet.
+    :param eccentricity: float
+    :param distance: float
+    :param star_temperature: float
+    :param star_radius: float
+    :return:
+    """
+    try:
+        eccentricity = float(eccentricity)
+        if eccentricity <= 0 or eccentricity > 1:
+            eccentricity = 0
+    except ValueError:
+        eccentricity = 0.
+    distance = float(distance)
+    star_temperature = float(star_temperature)
+    star_radius = float(star_radius)
+    if distance <= 0 or star_temperature <= 0 or star_radius <= 0:
+        raise ValueError('Invalid value present')
+    temperature_sum = 0.
+    for k in xrange(0, 10, 1):
+        angle = math.pi / 5 * k
+        e1 = angle + eccentricity * math.sin(angle)
+        m1 = e1 - eccentricity * math.sin(e1)
+        e2 = e1 + (angle - m1) / (1. - eccentricity * math.cos(e1))
+        m2 = e2 - eccentricity * math.sin(e2)
+        e3 = e2 + (angle - m2) / (1 - eccentricity * math.cos(e1))
+        r = distance * (1 - eccentricity * math.cos(e3))
+        temperature_sum += (((star_temperature ** 4 * star_radius ** 2) / (r ** 2)) ** (1/4))/10
+    return temperature_sum
+
+
+MINIMAL_CODE_MASS = (
+    (float('-inf'), .002, 'M'),
+    (.002, .03, 'E'),
+    (.03, .6, 'N'),
+    (.6, 5., 'J'),
+    (5., 15., 'S'),
+    (15., float('inf'), 'D')
+)
+
+
+MINIMAL_CODE_TEMPERATURE = (
+    (0., 250., 'F'),
+    (250., 450., 'W'),
+    (450., 1000., 'K'),
+    (1000., float('inf'), 'R'),
+)
+
+
+def create_minimal_code(mass, temperature, orbits_around_pulsar=False):
+    mass = float(mass)
+    temperature = float(temperature)
+    minimal_code_list = [find_best_interval(mass, MINIMAL_CODE_MASS),
+                         find_best_interval(temperature, MINIMAL_CODE_TEMPERATURE) if not orbits_around_pulsar else 'P']
+    return ''.join(minimal_code_list)
+
+
+def find_best_interval(value, intervals):
+    for from_value, to_value, code in intervals:
+        if from_value <= value <= to_value:
+            return code
+
+
+def get_mass(object_in_tree):
+    return get_value(object_in_tree, "mass")
+
+
+def get_radius(obj):
+    return get_value(obj, "radius")
+
+
+def is_pulsar_nearby(obj):
+    for name in obj.findall(".//name"):
+        return name.ltrim().startswith("PSR")
+
+
+def get_temperature(obj):
+    return get_value(obj, "temperature")
+
+
+def get_value(obj, tag, parser=float):
+    """
+    Returns parsed value of element tree object from within tag. If parser is None then return element value string
+    representation.
+    :param obj: element tree object
+    :param tag: string
+    :param parser: parser callback
+    :return: object parsed value
+    """
+    for value in obj.findall(".//%s" % tag):
+        try:
+            return parser(value.text) if parser else value.text
+        except ValueError:
+            continue
+    raise ValueError("Valid tag: %s not found in element tree" % tag)
+
+
+
 # Loop over all files and  create new data
 for filename in glob.glob("systems*/*.xml"):
     fileschecked += 1
 
     # Save md5 for later
-    f = open(filename, 'rt')
-    md5_orig = md5_for_file(f)
+    with open(filename, 'rt') as f:
+        md5_orig = md5_for_file(f)
 
     # Open file
-    f = open(filename, 'rt')
+    with open(filename, 'rt') as f:  # it's good practice to close file, after work was finished
 
-    # Try to parse file
-    try:
-        root = ET.parse(f).getroot()
-        planets = root.findall(".//planet")
-        stars = root.findall(".//star")
-        binaries = root.findall(".//binary")
-    except ET.ParseError as error:
-        print '{}, {}'.format(filename, error)
-        xmlerrors += 1
-        issues += 1
-        continue
-    finally:
-        f.close()
-
-    # Find tags with range=1 and convert to default error format
-    for elem in root.findall(".//*[@range='1']"):
-        fragments = elem.text.split()
-        elem.text = fragments[0]
-        elem.attrib["errorminus"] = "%f" % (float(fragments[0]) - float(fragments[1]))
-        elem.attrib["errorplus"] = "%f" % (float(fragments[2]) - float(fragments[0]))
-        del elem.attrib["range"]
-        print "Converted range to errorbars in tag '" + elem.tag + "'."
-
-        # Convert units to default units
-    for mass in root.findall(".//planet/mass[@unit='me']"):
-        convertunit(mass, 0.0031457007)
-    for radius in root.findall(".//planet/radius[@unit='re']"):
-        convertunit(radius, 0.091130294)
-    for angle in root.findall(".//*[@unit='rad']"):
-        convertunit(angle, 57.2957795130823)
-
-    # Check lastupdate tag for correctness
-    for lastupdate in root.findall(".//planet/lastupdate"):
-        la = lastupdate.text.split("/")
-        if len(la) != 3 or len(lastupdate.text) != 8:
-            print "Date format not following 'yy/mm/dd' convention: " + filename
+        # Try to parse file
+        try:
+            root = ET.parse(f).getroot()
+            planets = root.findall(".//planet")
+            stars = root.findall(".//star")
+            binaries = root.findall(".//binary")
+        except ET.ParseError as error:
+            print '{}, {}'.format(filename, error)
+            xmlerrors += 1
             issues += 1
-        if int(la[0]) + 2000 - datetime.date.today().year > 0 or int(la[1]) > 12 or int(la[2]) > 31:
-            print "Date not valid: " + filename
-            issues += 1
+            f.close()
+            continue
+        finally:
+            f.close()
 
-    # Check that names follow conventions
-    if not root.findtext("./name") + ".xml" == os.path.basename(filename):
-        print "Name of system not the same as filename: " + filename
-        issues += 1
-    for obj in planets + stars:
-        name = obj.findtext("./name")
-        if not name:
-            print "Didn't find name tag for object \"" + obj.tag + "\" in file \"" + filename + "\"."
-            issues += 1
+        # Find tags with range=1 and convert to default error format
+        for elem in root.findall(".//*[@range='1']"):
+            fragments = elem.text.split()
+            elem.text = fragments[0]
+            elem.attrib["errorminus"] = "%f" % (float(fragments[0]) - float(fragments[1]))
+            elem.attrib["errorplus"] = "%f" % (float(fragments[2]) - float(fragments[0]))
+            del elem.attrib["range"]
+            print "Converted range to errorbars in tag '" + elem.tag + "'."
 
-    # Check if tags are valid and have valid attributes
-    if checkforvaliderrors(root):
-        print "Problematic errorbar in in file \"" + filename + "\"."
+            # Convert units to default units
+        for mass in root.findall(".//planet/mass[@unit='me']"):
+            convertunit(mass, 0.0031457007)
+        for radius in root.findall(".//planet/radius[@unit='re']"):
+            convertunit(radius, 0.091130294)
+        for angle in root.findall(".//*[@unit='rad']"):
+            convertunit(angle, 57.2957795130823)
 
-    problematictag = checkforvalidtags(root)
-    if problematictag:
-        print "Problematic tag/attribute '" + problematictag + "' found in file \"" + filename + "\"."
-        issues += 1
-    discoverymethods = root.findall(".//discoverymethod")
-    for dm in discoverymethods:
-        if not (dm.text in validdiscoverymethods):
-            print "Problematic discoverymethod '" + dm.text + "' found in file \"" + filename + "\"."
-            issues += 1
+        for star in root.findall(".//star"):
+            star_temperature = get_temperature(star)
+            star_radius = get_radius(star)
+            for planet in star.findall(".//planet"):
+                try:
+                    eccentricity = get_value(planet, "eccentricity") # TODO make method for this call
+                    distance = get_value(planet, "semimajoraxis")
+                    min_code = create_minimal_code(
+                        get_mass(planet),
+                        average_dyson_temperature(eccentricity, distance, star_temperature, star_radius),
+                        is_pulsar_nearby(planet)
+                    )
+                    planet.set('minimal-code', min_code)
+                except ValueError:
+                    continue
 
-    # Check if there are duplicate tags
-    for obj in planets + stars + binaries:
-        uniquetags = []
-        for child in obj:
-            if not child.tag in tagsallowmultiple:
-                if child.tag in uniquetags:
-                    print "Error: Found duplicate tag \"" + child.tag + "\" in file \"" + filename + "\"."
-                    issues += 1
-                else:
-                    uniquetags.append(child.tag)
-    
-    # Check binary planet lists
-    checkForBinaryPlanet(root, ".//binary/planet", "Planets in binary systems, P-type")
-    checkForBinaryPlanet(root, ".//binary/star/planet", "Planets in binary systems, S-type")
-    
-    # Check for valid list names
-    lists = root.findall(".//list")
-    for l in lists:
-        if l.text not in validlists:
-                print "Error: Invalid list \"" + l.text + "\" in file \"" + filename + "\"."
+        # Check lastupdate tag for correctness
+        for lastupdate in root.findall(".//planet/lastupdate"):
+            la = lastupdate.text.split("/")
+            if len(la) != 3 or len(lastupdate.text) != 8: # this is pointless. By this check is also valid %$/sd/\nk
+                print "Date format not following 'yy/mm/dd' convention: " + filename
+                issues += 1
+            if int(la[0]) + 2000 - datetime.date.today().year > 0 or int(la[1]) > 12 or int(la[2]) > 31:
+                print "Date not valid: " + filename
                 issues += 1
 
-    # Check if each planet is in at least one list
-    oneListOf = ["Confirmed planets", "Controversial", "Kepler Objects of Interest","Solar System", "Retracted planet candidate"]
-    for p in planets:
-        isInList = 0
-        for l in p.findall("./list"):
-            if l.text in oneListOf:
-                isInList += 1
-        if isInList!=1:
-            print "Error: Planet needs to be in exactly one of the following lists: '" +"', '".join(oneListOf)+"'. Check planets in file \"" + filename + "\"."
+        # Check that names follow conventions
+        if not root.findtext("./name") + ".xml" == os.path.basename(filename):
+            print "Name of system not the same as filename: " + filename
             issues += 1
+        for obj in planets + stars:
+            name = obj.findtext("./name")
+            if not name:
+                print "Didn't find name tag for object \"" + obj.tag + "\" in file \"" + filename + "\"."
+                issues += 1
+
+        # Check if tags are valid and have valid attributes
+        if checkforvaliderrors(root):
+            print "Problematic errorbar in in file \"" + filename + "\"."
+
+        problematictag = checkforvalidtags(root)
+        if problematictag:
+            print "Problematic tag/attribute '" + problematictag + "' found in file \"" + filename + "\"."
+            issues += 1
+        discoverymethods = root.findall(".//discoverymethod")
+        for dm in discoverymethods:
+            if not (dm.text in validdiscoverymethods):
+                print "Problematic discoverymethod '" + dm.text + "' found in file \"" + filename + "\"."
+                issues += 1
+
+        # Check if there are duplicate tags
+        for obj in planets + stars + binaries:
+            uniquetags = []
+            for child in obj:
+                if not child.tag in tagsallowmultiple:
+                    if child.tag in uniquetags:
+                        print "Error: Found duplicate tag \"" + child.tag + "\" in file \"" + filename + "\"."
+                        issues += 1
+                    else:
+                        uniquetags.append(child.tag)
+
+        # Check binary planet lists
+        checkForBinaryPlanet(root, ".//binary/planet", "Planets in binary systems, P-type")
+        checkForBinaryPlanet(root, ".//binary/star/planet", "Planets in binary systems, S-type")
+
+        # Check for valid list names
+        lists = root.findall(".//list")
+        for l in lists:
+            if l.text not in validlists:
+                    print "Error: Invalid list \"" + l.text + "\" in file \"" + filename + "\"."
+                    issues += 1
+
+        # Check if each planet is in at least one list
+        oneListOf = ["Confirmed planets", "Controversial", "Kepler Objects of Interest","Solar System", "Retracted planet candidate"]
+        for p in planets:
+            isInList = 0
+            for l in p.findall("./list"):
+                if l.text in oneListOf:
+                    isInList += 1
+            if isInList!=1:
+                print "Error: Planet needs to be in exactly one of the following lists: '" + "', '".join(oneListOf) \
+                      + "'. Check planets in file \"" + filename + "\"."
+                issues += 1
 
 
-    # Check transiting planets
-    checkForTransitingPlanets(root)
+        # Check transiting planets
+        checkForTransitingPlanets(root)
 
-    # Cleanup XML
-    removeemptytags(root)
-    indent(root)
+        # Cleanup XML
+        removeemptytags(root)
+        indent(root)
 
-    # Write XML to file.
-    ET.ElementTree(root).write(filename, encoding="UTF-8", xml_declaration=False)
+        # Write XML to file.
+        ET.ElementTree(root).write(filename, encoding="UTF-8", xml_declaration=False)
 
-    # Check for new md5
-    f = open(filename, 'rt')
-    md5_new = md5_for_file(f)
-    if md5_orig != md5_new:
-        fileschanged += 1
+        # Check for new md5
+    with open(filename, 'rt') as f:
+        md5_new = md5_for_file(f)
+        if md5_orig != md5_new:
+            fileschanged += 1
 
 errorcode = 0
 print "Cleanup script finished. %d files checked." % fileschecked

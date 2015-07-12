@@ -3,14 +3,14 @@
 # The input data comes from a csv files from the NASA Exoplanet Archive http://exoplanetarchive.ipac.caltech.edu.
 import math
 import os
-import xml.etree.ElementTree as ET, glob
+import xml.etree.ElementTree as ET
 
 # Delete old data files.
 os.system("rm systems_kepler/*.xml")
 
 # Read in csv file. This file is presorted according to the KOI Name (the default file they offer as a download is not). 
 # This makes matching systems with multiple planets much easier, but it should be incorporated in this script.
-os.system("sort -k3 -t',' cumulative.csv >cumulative.sorted")
+os.system("sort -k3 -t',' cumulative.csv >cumulative.sorted") # there is no reason to use system sort, its slower
 csvfile = open("cumulative.sorted", "r")
 
 lastsystemname = ""
@@ -36,6 +36,7 @@ for row in csvfile:
         description = "This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a confirmed planet by the Kepler team and might have already appear in a peer reviewed paper."
 
     # Read in paramaters (not pretty, but works)
+    # Maaan just map'em, like a 5 is period and so on it's enough
     period = c[5]
     perioderrorplus = c[6]
     perioderrorminus = c[7]
@@ -49,7 +50,7 @@ for row in csvfile:
     semiaerrorplus = c[27]
     semiaerrorminus = c[28]
     e = c[29]
-    errrorplus = c[30]
+    eerrorplus = c[30]
     eerrorminus = c[31]
     radius = c[41]  # earthradii
     radiuserrorplus = c[42]  # earthradii
@@ -82,8 +83,7 @@ for row in csvfile:
 
     # Calculate a distance estimate based on the luminosity and the stellar temperature.
     if tempstar:
-        luminosity = float(radiusstar) * float(radiusstar) * float(tempstar) * float(tempstar) * float(
-            tempstar) * float(tempstar) / 5778. / 5778. / 5778. / 5778.
+        luminosity = float(radiusstar) ** 2 * float(tempstar) ** 4 / (5778. ** 4)
 
         M = -2.5 * math.log10(luminosity) + 4.74
 
