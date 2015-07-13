@@ -9,8 +9,7 @@ import datetime
 import re
 import math
 
-num_format = re.compile(r'^\-?[0-9]*\.?[0-9]*e?[\-\+]?[0-9]?[0-9]?$') # This one is wrong
-num_format = re.compile(r'^[+\-]?\d*\.?\d+(?:[eE][-+]?\d+)?')
+num_format = re.compile(r'^\s*[+\-]?\s*(\d+\.?\d*|\d*\.?\d+)\s*(?:[eE]\s*[\-+]?\s*\d+)?\s*')  # TODO check if this works
 
 # Variables to keep track of progress
 fileschecked = 0
