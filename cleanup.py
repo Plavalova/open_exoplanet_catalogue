@@ -30,7 +30,7 @@ def md5_for_file(f, block_size=2 ** 20):
 
 
 # Nicely indents the XML output
-# There is no good reason, not tu use BeautifulSoup and prettyfy method
+# There is no good reason, xml.dom.minidom.parse(...) -> xml.toprettyxml()
 def indent(elem, level=0):
     i = "\n" + level * "\t"
     if len(elem):
@@ -268,7 +268,7 @@ def average_dyson_temperature(eccentricity, distance, star_temperature, star_rad
         m2 = e2 - eccentricity * math.sin(e2)
         e3 = e2 + (angle - m2) / (1 - eccentricity * math.cos(e1))
         r = distance * (1 - eccentricity * math.cos(e3))
-        temperature_sum += (((star_temperature ** 4 * star_radius ** 2) / (r ** 2)) ** (1/4))/10
+        temperature_sum += (((star_temperature ** 4 * star_radius ** 2) / (r ** 2)) ** (1/4))/10.
     return temperature_sum
 
 
@@ -326,9 +326,25 @@ def get_temperature(obj):
 
 def get_eccentricity(obj):
     try:
-        return get_value(obj, "temperature")
-    except:
+        return get_value(obj, "eccentricity")
+    except ValueError:
         return 0.
+
+
+def create_or_overwrite(element, tag, value):
+    overwritten = False
+    search_for_tag = ".//%s" % tag
+    for tag_element in element.findall(search_for_tag):
+        if not overwritten:
+            tag_element.text = value
+            overwritten = True
+        else:
+            element.remove(tag_element)
+    if not overwritten:
+        child = ET.Element(tag)
+        child.text = value
+        element.append(child)
+
 
 
 def get_value(obj, tag, parser=float):
@@ -349,7 +365,6 @@ def get_value(obj, tag, parser=float):
     raise ValueError("Tag %s not found in element" % tag)
 
 
-
 # Loop over all files and  create new data
 for filename in glob.glob("systems*/*.xml"):
     fileschecked += 1
@@ -357,7 +372,6 @@ for filename in glob.glob("systems*/*.xml"):
     # Save md5 for later
     with open(filename, 'rt') as f:
         md5_orig = md5_for_file(f)
-    log_file_name = []
     # Open file
     with open(filename, 'rt') as f:  # it's good practice to close file, after work was finished
 
@@ -396,6 +410,7 @@ for filename in glob.glob("systems*/*.xml"):
         for star in root.findall(".//star"):
             try:
                 pulsar = is_pulsar_nearby(star)
+                star_temperature = -1.
                 if not pulsar:
                     star_temperature = get_temperature(star)
                 star_radius = get_radius(star)
@@ -403,7 +418,7 @@ for filename in glob.glob("systems*/*.xml"):
                     try:
                         eccentricity = get_eccentricity(planet) # TODO make method for this call
                         distance = get_value(planet, "semimajoraxis")
-                        _temp = -1000000  # This value is not reachable
+                        _temp = -1.  # This value is not reachable
                         if not pulsar:
                             _temp = average_dyson_temperature(eccentricity, distance, star_temperature, star_radius)
                         min_code = create_minimal_code(
@@ -411,18 +426,11 @@ for filename in glob.glob("systems*/*.xml"):
                             _temp,
                             pulsar
                         )
-                        min_code_tag = ET.Element("minimal-code")
-                        min_code_tag.text = min_code
-                        planet.append(min_code_tag)
+                        create_or_overwrite(planet, "minimal-code", min_code)
                     except ValueError:
-                        log_file_name.append(filename)
                         continue
             except ValueError:
-                log_file_name.append(filename)
                 continue
-
-        with open("error.log", "w") as log_file:
-            log_file.writelines(log_file_name)
 
         # Check lastupdate tag for correctness
         for lastupdate in root.findall(".//planet/lastupdate"):
