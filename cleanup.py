@@ -9,7 +9,7 @@ import datetime
 import re
 import math
 
-num_format = re.compile(r'^\s*[+\-]?\s*(\d+\.?\d*|\d*\.?\d+)\s*(?:[eE]\s*[\-+]?\s*\d+)?\s*')  # TODO check if this works
+num_format = re.compile(r'^\s*[+\-]?\s*(\d+\.?\d*|\d*\.?\d+)s*(?:[eE]\s*[\-+]?\s*\d+)?\s*')  # TODO check if this works
 
 # Variables to keep track of progress
 fileschecked = 0
@@ -291,11 +291,10 @@ MINIMAL_CODE_TEMPERATURE = (
 
 
 def create_minimal_code(mass, temperature, orbits_around_pulsar=False):
-    mass = float(mass)
-    temperature = float(temperature)
-    minimal_code_list = [find_best_interval(mass, MINIMAL_CODE_MASS),
-                         find_best_interval(temperature, MINIMAL_CODE_TEMPERATURE) if not orbits_around_pulsar else 'P']
-    return ''.join(minimal_code_list)
+    if temperature < 0 and not orbits_around_pulsar:
+        raise ValueError("Invalid temperature")
+    return ''.join((find_best_interval(mass, MINIMAL_CODE_MASS),
+                    find_best_interval(temperature, MINIMAL_CODE_TEMPERATURE) if not orbits_around_pulsar else 'P'))
 
 
 def find_best_interval(value, intervals):
@@ -313,12 +312,23 @@ def get_radius(obj):
 
 
 def is_pulsar_nearby(obj):
+    """
+    :param obj: Element
+    :return: bool
+    """
     for name in obj.findall(".//name"):
-        return name.ltrim().startswith("PSR")
+        return name.text.strip().startswith("PSR")
 
 
 def get_temperature(obj):
     return get_value(obj, "temperature")
+
+
+def get_eccentricity(obj):
+    try:
+        return get_value(obj, "temperature")
+    except:
+        return 0.
 
 
 def get_value(obj, tag, parser=float):
@@ -330,12 +340,13 @@ def get_value(obj, tag, parser=float):
     :param parser: parser callback
     :return: object parsed value
     """
-    for value in obj.findall(".//%s" % tag):
+    element = ".//%s" % tag
+    for value in obj.findall(element):
         try:
             return parser(value.text) if parser else value.text
-        except ValueError:
+        except:
             continue
-    raise ValueError("Valid tag: %s not found in element tree" % tag)
+    raise ValueError("Tag %s not found in element" % tag)
 
 
 
@@ -346,7 +357,7 @@ for filename in glob.glob("systems*/*.xml"):
     # Save md5 for later
     with open(filename, 'rt') as f:
         md5_orig = md5_for_file(f)
-
+    log_file_name = []
     # Open file
     with open(filename, 'rt') as f:  # it's good practice to close file, after work was finished
 
@@ -383,20 +394,35 @@ for filename in glob.glob("systems*/*.xml"):
             convertunit(angle, 57.2957795130823)
 
         for star in root.findall(".//star"):
-            star_temperature = get_temperature(star)
-            star_radius = get_radius(star)
-            for planet in star.findall(".//planet"):
-                try:
-                    eccentricity = get_value(planet, "eccentricity") # TODO make method for this call
-                    distance = get_value(planet, "semimajoraxis")
-                    min_code = create_minimal_code(
-                        get_mass(planet),
-                        average_dyson_temperature(eccentricity, distance, star_temperature, star_radius),
-                        is_pulsar_nearby(planet)
-                    )
-                    planet.set('minimal-code', min_code)
-                except ValueError:
-                    continue
+            try:
+                pulsar = is_pulsar_nearby(star)
+                if not pulsar:
+                    star_temperature = get_temperature(star)
+                star_radius = get_radius(star)
+                for planet in star.findall(".//planet"):
+                    try:
+                        eccentricity = get_eccentricity(planet) # TODO make method for this call
+                        distance = get_value(planet, "semimajoraxis")
+                        _temp = -1000000  # This value is not reachable
+                        if not pulsar:
+                            _temp = average_dyson_temperature(eccentricity, distance, star_temperature, star_radius)
+                        min_code = create_minimal_code(
+                            get_mass(planet),
+                            _temp,
+                            pulsar
+                        )
+                        min_code_tag = ET.Element("minimal-code")
+                        min_code_tag.text = min_code
+                        planet.append(min_code_tag)
+                    except ValueError:
+                        log_file_name.append(filename)
+                        continue
+            except ValueError:
+                log_file_name.append(filename)
+                continue
+
+        with open("error.log", "w") as log_file:
+            log_file.writelines(log_file_name)
 
         # Check lastupdate tag for correctness
         for lastupdate in root.findall(".//planet/lastupdate"):
