@@ -27,6 +27,7 @@
 			<description>According to a new paper by Jones and Jenkins, a reanalysis of the original data shows no evidence for this planet. It is therefore listed as controversial.</description>
 			<discoveryyear>2010</discoveryyear>
 			<temperature>2011.0</temperature>
+			<minimal-code>JR</minimal-code>
 		</planet>
 		<name>HIP 13044</name>
 		<temperature>6025.0</temperature>

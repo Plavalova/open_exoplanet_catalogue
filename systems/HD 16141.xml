@@ -39,6 +39,7 @@
 				Credit: Greg Bacon (STScI), NASA</imagedescription>
 				<list>Planets in binary systems, S-type</list>
 				<temperature>410.3</temperature>
+				<minimal-code>NK</minimal-code>
 			</planet>
 			<temperature>5533.0</temperature>
 		</star>

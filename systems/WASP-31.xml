@@ -31,6 +31,7 @@
 			<discoveryyear>2010</discoveryyear>
 			<temperature>1410.6</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>NR</minimal-code>
 		</planet>
 		<name>WASP-31</name>
 		<temperature>6200.0</temperature>

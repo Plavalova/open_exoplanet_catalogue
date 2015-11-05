@@ -28,6 +28,7 @@
 			<discoveryyear>2005</discoveryyear>
 			<temperature>1601.5</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>NR</minimal-code>
 		</planet>
 		<name>HD 149026</name>
 		<temperature>6147.0</temperature>

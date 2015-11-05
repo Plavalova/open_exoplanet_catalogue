@@ -32,6 +32,7 @@
 			<discoveryyear>2010</discoveryyear>
 			<temperature>1058.7</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>NR</minimal-code>
 		</planet>
 		<name>WASP-34</name>
 		<temperature>5700.0</temperature>

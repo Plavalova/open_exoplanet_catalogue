@@ -28,6 +28,7 @@
 			<temperature>987.0</temperature>
 			<transittime errorminus="0.00035" errorplus="0.00035" unit="BJD">2455863.11957</transittime>
 			<istransiting>1</istransiting>
+			<minimal-code>NR</minimal-code>
 		</planet>
 		<name>HAT-P-38</name>
 		<temperature>5330.0</temperature>

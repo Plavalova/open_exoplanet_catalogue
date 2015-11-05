@@ -33,6 +33,7 @@
 			<discoveryyear>2013</discoveryyear>
 			<description>The system KOI-2672 was discovered using transit data from the Kepler telescope. The planetary nature of the system was confirmed using transit timing variations.</description>
 			<istransiting>1</istransiting>
+			<minimal-code>NK</minimal-code>
 		</planet>
 		<planet>
 			<name>KOI-2672.02</name>
@@ -52,6 +53,7 @@
 			<discoveryyear>2013</discoveryyear>
 			<description>The system KOI-2672 was discovered using transit data from the Kepler telescope. The planetary nature of the system was confirmed using transit timing variations.</description>
 			<istransiting>1</istransiting>
+			<minimal-code>NK</minimal-code>
 		</planet>
 	</star>
 </system>

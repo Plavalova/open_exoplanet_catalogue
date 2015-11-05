@@ -33,6 +33,7 @@
 			<discoveryyear>2013</discoveryyear>
 			<list>Confirmed planets</list>
 			<istransiting>1</istransiting>
+			<minimal-code>JK</minimal-code>
 		</planet>
 		<planet>
 			<name>Kepler-87 c</name>
@@ -52,6 +53,7 @@
 			<discoveryyear>2013</discoveryyear>
 			<list>Confirmed planets</list>
 			<istransiting>1</istransiting>
+			<minimal-code>EK</minimal-code>
 		</planet>
 	</star>
 </system>

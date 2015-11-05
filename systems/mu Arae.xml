@@ -31,6 +31,7 @@
 			<lastupdate>09/04/02</lastupdate>
 			<discoveryyear>2000</discoveryyear>
 			<temperature>228.7</temperature>
+			<minimal-code>JW</minimal-code>
 		</planet>
 		<planet>
 			<name>mu Arae c</name>
@@ -46,6 +47,7 @@
 			<lastupdate>09/04/02</lastupdate>
 			<discoveryyear>2004</discoveryyear>
 			<temperature>928.2</temperature>
+			<minimal-code>NR</minimal-code>
 		</planet>
 		<planet>
 			<name>mu Arae d</name>
@@ -61,6 +63,7 @@
 			<lastupdate>09/04/02</lastupdate>
 			<discoveryyear>2004</discoveryyear>
 			<temperature>292.1</temperature>
+			<minimal-code>NK</minimal-code>
 		</planet>
 		<planet>
 			<name>mu Arae e</name>
@@ -76,6 +79,7 @@
 			<lastupdate>09/04/02</lastupdate>
 			<discoveryyear>2006</discoveryyear>
 			<temperature>122.5</temperature>
+			<minimal-code>JF</minimal-code>
 		</planet>
 		<temperature>5700.0</temperature>
 	</star>

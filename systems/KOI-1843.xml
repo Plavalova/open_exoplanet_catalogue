@@ -25,6 +25,7 @@
 			<discoveryyear>2012</discoveryyear>
 			<lastupdate>13/07/15</lastupdate>
 			<istransiting>1</istransiting>
+			<minimal-code>MR</minimal-code>
 		</planet>
 		<planet>
 			<name>KOI-1843.01</name>

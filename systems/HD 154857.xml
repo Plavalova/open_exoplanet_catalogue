@@ -25,6 +25,7 @@
 			<discoveryyear>2004</discoveryyear>
 			<temperature>336.0</temperature>
 			<description>HD 114613 b is a Jupiter-mass planet in a multiplanery system. A stability analysis shows that the system is stable for at least 100 million years. The planet was discovered by the Anglo-Australian Planet Search group.</description>
+			<minimal-code>JK</minimal-code>
 		</planet>
 		<planet>
 			<name>HD 154857 c</name>
@@ -38,6 +39,7 @@
 			<lastupdate>14/01/25</lastupdate>
 			<discoveryyear>2014</discoveryyear>
 			<description>HD 154857 c is a Jupiter analogue with a period of 9.5 years. The planet is part of a multi-planetary system and was discovered by the Anglo-Australian Planet Search group.</description>
+			<minimal-code>JF</minimal-code>
 		</planet>
 	</star>
 </system>

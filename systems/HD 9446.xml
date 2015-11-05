@@ -26,6 +26,7 @@
 			<lastupdate>10/01/05</lastupdate>
 			<discoveryyear>2010</discoveryyear>
 			<temperature>586.1</temperature>
+			<minimal-code>JK</minimal-code>
 		</planet>
 		<planet>
 			<name>HD 9446 c</name>
@@ -38,6 +39,7 @@
 			<lastupdate>10/01/05</lastupdate>
 			<discoveryyear>2010</discoveryyear>
 			<temperature>315.8</temperature>
+			<minimal-code>JK</minimal-code>
 		</planet>
 		<name>HD 9446</name>
 		<temperature>5793.0</temperature>

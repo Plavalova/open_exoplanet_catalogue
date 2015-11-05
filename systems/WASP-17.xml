@@ -31,6 +31,7 @@
 			<discoveryyear>2009</discoveryyear>
 			<temperature>1517.8</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>NR</minimal-code>
 		</planet>
 		<name>WASP-17</name>
 		<temperature>6650.0</temperature>

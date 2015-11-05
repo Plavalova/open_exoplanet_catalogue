@@ -26,6 +26,7 @@
 			<discoveryyear>2002</discoveryyear>
 			<temperature>1390.3</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>JR</minimal-code>
 		</planet>
 		<name>OGLE-TR-56</name>
 		<temperature>5940.0</temperature>

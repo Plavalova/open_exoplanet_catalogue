@@ -27,6 +27,7 @@
 			<lastupdate>11/09/15</lastupdate>
 			<discoveryyear>2011</discoveryyear>
 			<temperature>636.3</temperature>
+			<minimal-code>NK</minimal-code>
 		</planet>
 		<planet>
 			<name>HIP 57274 c</name>
@@ -40,6 +41,7 @@
 			<lastupdate>11/09/15</lastupdate>
 			<discoveryyear>2011</discoveryyear>
 			<temperature>399.8</temperature>
+			<minimal-code>NK</minimal-code>
 		</planet>
 		<planet>
 			<name>HIP 57274 d</name>
@@ -53,6 +55,7 @@
 			<lastupdate>11/09/15</lastupdate>
 			<discoveryyear>2011</discoveryyear>
 			<temperature>167.1</temperature>
+			<minimal-code>NW</minimal-code>
 		</planet>
 		<name>HIP 57274</name>
 		<temperature>4640.0</temperature>

@@ -39,6 +39,7 @@
 			<temperature>1788.2</temperature>
 			<transittime unit="HJD">2455093.8369</transittime>
 			<istransiting>1</istransiting>
+			<minimal-code>NR</minimal-code>
 		</planet>
 		<name>Kepler-21</name>
 		<name>KOI-975</name>

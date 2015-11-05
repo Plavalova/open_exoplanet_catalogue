@@ -33,6 +33,7 @@
 			<temperature>1666.1</temperature>
 			<transittime errorminus="0.003" errorplus="0.003" unit="BJD">2454446.737</transittime>
 			<istransiting>1</istransiting>
+			<minimal-code>ER</minimal-code>
 		</planet>
 		<planet>
 			<name>CoRoT-7 c</name>
@@ -50,6 +51,7 @@
 			<temperature>1018.8</temperature>
 			<transittime errorminus="0.7" errorplus="0.7" unit="JD">2454445.0</transittime>
 			<istransiting>1</istransiting>
+			<minimal-code>ER</minimal-code>
 		</planet>
 		<name>CoRoT-7</name>
 		<temperature>5313.0</temperature>

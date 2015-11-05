@@ -48,6 +48,7 @@
 				<discoveryyear>2014</discoveryyear>
 				<istransiting>1</istransiting>
 				<list>Planets in binary systems, S-type</list>
+				<minimal-code>JR</minimal-code>
 			</planet>
 			<planet>
 				<name>KOI-1299 c</name>

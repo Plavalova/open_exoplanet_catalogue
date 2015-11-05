@@ -30,6 +30,7 @@
 			<temperature>888.3</temperature>
 			<transittime errorminus="0.00021" errorplus="0.00021" unit="BJD">2455080.92661</transittime>
 			<istransiting>1</istransiting>
+			<minimal-code>SR</minimal-code>
 		</planet>
 		<name>HAT-P-20</name>
 		<temperature>4595.0</temperature>

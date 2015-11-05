@@ -37,6 +37,7 @@
 				<discoveryyear>2012</discoveryyear>
 				<list>Planets in binary systems, S-type</list>
 				<istransiting>1</istransiting>
+				<minimal-code>JR</minimal-code>
 			</planet>
 			<name>WASP-77 A</name>
 		</star>

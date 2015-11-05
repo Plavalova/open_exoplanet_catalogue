@@ -37,6 +37,7 @@
 			<discoveryyear>2012</discoveryyear>
 			<temperature errorminus="87" errorplus="87">1776</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>JR</minimal-code>
 		</planet>
 	</star>
 </system>

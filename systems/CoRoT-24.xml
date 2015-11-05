@@ -34,6 +34,7 @@
 			<istransiting>1</istransiting>
 			<lastupdate>14/06/08</lastupdate>
 			<discoveryyear>2014</discoveryyear>
+			<minimal-code>ER</minimal-code>
 		</planet>
 		<planet>
 			<name>CoRoT-24 c</name>
@@ -52,6 +53,7 @@
 			<istransiting>1</istransiting>
 			<lastupdate>14/06/08</lastupdate>
 			<discoveryyear>2014</discoveryyear>
+			<minimal-code>NR</minimal-code>
 		</planet>
 	</star>
 </system>

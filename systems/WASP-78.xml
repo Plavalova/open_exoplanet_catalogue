@@ -34,6 +34,7 @@
 			<discoveryyear>2012</discoveryyear>
 			<temperature>2006.7</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>JR</minimal-code>
 		</planet>
 		<name>WASP-78</name>
 		<temperature>6100.0</temperature>

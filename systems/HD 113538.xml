@@ -30,6 +30,7 @@
 			<lastupdate>14/12/23</lastupdate>
 			<discoveryyear>2010</discoveryyear>
 			<temperature>192.6</temperature>
+			<minimal-code>NF</minimal-code>
 		</planet>
 		<planet>
 			<name>HD 113538 c</name>
@@ -43,6 +44,7 @@
 			<lastupdate>14/12/23</lastupdate>
 			<discoveryyear>2010</discoveryyear>
 			<temperature>106.1</temperature>
+			<minimal-code>JF</minimal-code>
 		</planet>
 	</star>
 </system>

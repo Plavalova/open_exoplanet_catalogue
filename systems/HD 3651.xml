@@ -27,6 +27,7 @@
 			<lastupdate>10/10/19</lastupdate>
 			<discoveryyear>2003</discoveryyear>
 			<temperature>405.0</temperature>
+			<minimal-code>NK</minimal-code>
 		</planet>
 		<planet>
 			<name>HD 3651.02</name>
@@ -41,6 +42,7 @@
 			<discoverymethod>RV</discoverymethod>
 			<discoveryyear>2013</discoveryyear>
 			<lastupdate>15/04/23</lastupdate>
+			<minimal-code>NK</minimal-code>
 		</planet>
 		<name>HD 3651</name>
 		<temperature>5173.0</temperature>

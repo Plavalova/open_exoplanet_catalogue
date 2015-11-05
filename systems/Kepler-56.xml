@@ -31,6 +31,7 @@
 			<lastupdate>15/04/14</lastupdate>
 			<discoveryyear>2012</discoveryyear>
 			<istransiting>1</istransiting>
+			<minimal-code>NR</minimal-code>
 		</planet>
 		<planet>
 			<name>Kepler-56 c</name>
@@ -50,6 +51,7 @@
 			<lastupdate>15/04/14</lastupdate>
 			<discoveryyear>2012</discoveryyear>
 			<istransiting>1</istransiting>
+			<minimal-code>NR</minimal-code>
 		</planet>
 		<planet>
 			<name>Kepler-56 d</name>
@@ -63,6 +65,7 @@
 			<lastupdate>15/04/14</lastupdate>
 			<discoveryyear>2012</discoveryyear>
 			<description>A linear trend in the radial velocity measurements indicate a third object orbiting Kepler-56, which has tilted the orbits of the inner planets with respect to the stellar equator. So far it has not been possible to confirm the nature of this object from the observations of the system, but it may be a giant planet in a 2 AU orbit.</description>
+			<minimal-code>JK</minimal-code>
 		</planet>
 	</star>
 </system>

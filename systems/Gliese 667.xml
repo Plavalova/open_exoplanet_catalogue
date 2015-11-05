@@ -66,6 +66,7 @@
 
 	Credit: ESO/M. Kornmesser</imagedescription>
 				<list>Planets in binary systems, S-type</list>
+				<minimal-code>EK</minimal-code>
 			</planet>
 			<planet>
 				<name>Gliese 667 C h</name>
@@ -87,6 +88,7 @@
 
 	Credit: ESO/M. Kornmesser</imagedescription>
 				<list>Planets in binary systems, S-type</list>
+				<minimal-code>EK</minimal-code>
 			</planet>
 			<planet>
 				<name>Gliese 667 C c</name>
@@ -108,6 +110,7 @@
 
 	Credit: ESO/M. Kornmesser</imagedescription>
 				<list>Planets in binary systems, S-type</list>
+				<minimal-code>EW</minimal-code>
 			</planet>
 			<planet>
 				<name>Gliese 667 C f</name>
@@ -129,6 +132,7 @@
 
 	Credit: ESO/M. Kornmesser</imagedescription>
 				<list>Planets in binary systems, S-type</list>
+				<minimal-code>EW</minimal-code>
 			</planet>
 			<planet>
 				<name>Gliese 667 C e</name>
@@ -150,6 +154,7 @@
 
 	Credit: ESO/M. Kornmesser</imagedescription>
 				<list>Planets in binary systems, S-type</list>
+				<minimal-code>EW</minimal-code>
 			</planet>
 			<planet>
 				<name>Gliese 667 C d</name>
@@ -171,6 +176,7 @@
 
 	Credit: ESO/M. Kornmesser</imagedescription>
 				<list>Planets in binary systems, S-type</list>
+				<minimal-code>EW</minimal-code>
 			</planet>
 			<planet>
 				<name>Gliese 667 C g</name>
@@ -192,6 +198,7 @@
 
 	Credit: ESO/M. Kornmesser</imagedescription>
 				<list>Planets in binary systems, S-type</list>
+				<minimal-code>EF</minimal-code>
 			</planet>
 		</star>
 	</binary>

@@ -23,6 +23,7 @@
 			<longitude>252.25166724</longitude>
 			<description>Mercury is the innermost planet in the Solar System.</description>
 			<lastupdate>12/01/01</lastupdate>
+			<minimal-code>MK</minimal-code>
 		</planet>
 		<planet>
 			<name>Venus</name>
@@ -39,6 +40,7 @@
 			<longitude>181.97970850</longitude>
 			<description>Venus is the second planet from the Sun.</description>
 			<lastupdate>12/01/01</lastupdate>
+			<minimal-code>EK</minimal-code>
 		</planet>
 		<planet>
 			<name>Earth</name>
@@ -55,6 +57,7 @@
 			<longitude>100.46691572</longitude>
 			<description>Earth is the only known planet able to sustain life.</description>
 			<lastupdate>12/01/01</lastupdate>
+			<minimal-code>EW</minimal-code>
 		</planet>
 		<planet>
 			<name>Mars</name>
@@ -71,6 +74,7 @@
 			<longitude>-4.56813164</longitude>
 			<description>Mars is named after the Roman god of war and often called the red planet.</description>
 			<lastupdate>12/01/01</lastupdate>
+			<minimal-code>MW</minimal-code>
 		</planet>
 		<planet>
 			<name>Jupiter</name>
@@ -87,6 +91,7 @@
 			<longitude>34.33479152</longitude>
 			<description>Jupiter is two and a half times the mass of all the other planets in the Solar System.</description>
 			<lastupdate>12/01/01</lastupdate>
+			<minimal-code>JF</minimal-code>
 		</planet>
 		<planet>
 			<name>Saturn</name>
@@ -103,6 +108,7 @@
 			<longitude>50.07571329</longitude>
 			<description>Saturn is best known for its extensive ring system.</description>
 			<lastupdate>12/01/01</lastupdate>
+			<minimal-code>NF</minimal-code>
 		</planet>
 		<planet>
 			<name>Uranus</name>
@@ -120,6 +126,7 @@
 			<description>Uranus is visible with the naked eye but has never been recognized as a planet by ancient observers.</description>
 			<lastupdate>12/01/01</lastupdate>
 			<discoveryyear>1781</discoveryyear>
+			<minimal-code>NF</minimal-code>
 		</planet>
 		<planet>
 			<name>Neptune</name>
@@ -137,6 +144,7 @@
 			<description>Neptune is the fourth largest planet in the Solar System.</description>
 			<lastupdate>12/01/01</lastupdate>
 			<discoveryyear>1846</discoveryyear>
+			<minimal-code>NF</minimal-code>
 		</planet>
 		<planet>
 			<name>Pluto</name>
@@ -154,6 +162,7 @@
 			<description>Pluto is officially categorized as a minor planet by the International Astronomical Union.</description>
 			<lastupdate>12/01/01</lastupdate>
 			<discoveryyear>1930</discoveryyear>
+			<minimal-code>MF</minimal-code>
 		</planet>
 	</star>
 </system>

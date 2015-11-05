@@ -29,6 +29,7 @@
 				<discoveryyear>2005</discoveryyear>
 				<list>Planets in binary systems, S-type</list>
 				<temperature>112.3</temperature>
+				<minimal-code>SF</minimal-code>
 			</planet>
 			<temperature>5382.0</temperature>
 		</star>

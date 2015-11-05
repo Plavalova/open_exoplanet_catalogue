@@ -27,6 +27,7 @@
 			<discoveryyear>2007</discoveryyear>
 			<temperature>1581.5</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>JR</minimal-code>
 		</planet>
 		<name>OGLE-TR-211</name>
 		<temperature>6325.0</temperature>

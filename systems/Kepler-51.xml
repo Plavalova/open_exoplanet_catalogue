@@ -65,6 +65,7 @@
 			<lastupdate>14/03/05</lastupdate>
 			<discoverymethod>transit</discoverymethod>
 			<istransiting>1</istransiting>
+			<minimal-code>EK</minimal-code>
 		</planet>
 	</star>
 </system>

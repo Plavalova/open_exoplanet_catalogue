@@ -33,6 +33,7 @@
 			<discoveryyear>2010</discoveryyear>
 			<temperature>376.6</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>JK</minimal-code>
 		</planet>
 		<name>CoRoT-9</name>
 		<temperature>5625.0</temperature>

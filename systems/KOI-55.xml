@@ -29,6 +29,7 @@
 			<lastupdate>12/01/16</lastupdate>
 			<discoveryyear>2011</discoveryyear>
 			<temperature>7112.0</temperature>
+			<minimal-code>MR</minimal-code>
 		</planet>
 		<planet>
 			<name>KOI-55 c</name>
@@ -45,6 +46,7 @@
 			<lastupdate>12/01/16</lastupdate>
 			<discoveryyear>2011</discoveryyear>
 			<temperature>6319.1</temperature>
+			<minimal-code>ER</minimal-code>
 		</planet>
 		<name>KOI-55</name>
 		<name>Kepler-70</name>

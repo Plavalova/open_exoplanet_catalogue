@@ -25,6 +25,7 @@
 			<discoveryyear>2003</discoveryyear>
 			<temperature>868.8</temperature>
 			<description>The planet candidate HD 122430 b was not confirmed in follow-up measurements (Soto et al. 2015)</description>
+			<minimal-code>JR</minimal-code>
 		</planet>
 		<name>HD 122430</name>
 		<temperature>4300.0</temperature>

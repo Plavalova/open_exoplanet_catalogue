@@ -34,6 +34,7 @@
 			<lastupdate>15/01/07</lastupdate>
 			<discoveryyear>2015</discoveryyear>
 			<temperature errorminus="45" errorplus="45">1000</temperature>
+			<minimal-code>JR</minimal-code>
 		</planet>
 	</star>
 </system>

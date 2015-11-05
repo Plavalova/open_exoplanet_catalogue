@@ -28,6 +28,7 @@
 			<lastupdate>13/11/22</lastupdate>
 			<discoveryyear>2013</discoveryyear>
 			<description>The HD 159243 system contains two planets, one of which (HD 159243 b) is a hot Jupiter with an orbital period of 12.6 days. The system was discovered with the SOPHIE spectrograph in France.</description>
+			<minimal-code>JR</minimal-code>
 		</planet>
 		<planet>
 			<name>HD 159243 c</name>
@@ -41,6 +42,7 @@
 			<lastupdate>13/11/22</lastupdate>
 			<discoveryyear>2013</discoveryyear>
 			<description>The HD 159243 system contains two planets, one of which (HD 159243 b) is a hot Jupiter with an orbital period of 12.6 days. The system was discovered with the SOPHIE spectrograph in France.</description>
+			<minimal-code>JK</minimal-code>
 		</planet>
 	</star>
 </system>

@@ -30,6 +30,7 @@
 			<discoveryyear>2008</discoveryyear>
 			<temperature>946.8</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>JR</minimal-code>
 		</planet>
 		<name>WASP-10</name>
 		<temperature>4675.0</temperature>

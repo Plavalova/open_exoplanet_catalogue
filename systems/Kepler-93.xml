@@ -36,6 +36,7 @@
 			<lastupdate>15/01/06</lastupdate>
 			<discoverymethod>transit</discoverymethod>
 			<istransiting>1</istransiting>
+			<minimal-code>ER</minimal-code>
 		</planet>
 		<planet>
 			<name>Kepler-93 c</name>
@@ -50,6 +51,7 @@
 			<discoveryyear>2014</discoveryyear>
 			<lastupdate>15/01/06</lastupdate>
 			<discoverymethod>RV</discoverymethod>
+			<minimal-code>DF</minimal-code>
 		</planet>
 	</star>
 </system>

@@ -24,6 +24,7 @@
 			<lastupdate>11/09/26</lastupdate>
 			<discoveryyear>1998</discoveryyear>
 			<temperature>549.0</temperature>
+			<minimal-code>SK</minimal-code>
 		</planet>
 		<planet>
 			<name>HD 168443 c</name>
@@ -37,6 +38,7 @@
 			<lastupdate>11/09/26</lastupdate>
 			<discoveryyear>2001</discoveryyear>
 			<temperature>179.3</temperature>
+			<minimal-code>DW</minimal-code>
 		</planet>
 		<name>HD 168443</name>
 		<temperature>5591.0</temperature>

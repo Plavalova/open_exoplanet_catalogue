@@ -33,6 +33,7 @@
 			<istransiting>1</istransiting>
 			<lastupdate>14/03/26</lastupdate>
 			<discoveryyear>2013</discoveryyear>
+			<minimal-code>NR</minimal-code>
 		</planet>
 		<planet>
 			<name>KOI-285 c</name>
@@ -50,6 +51,7 @@
 			<istransiting>1</istransiting>
 			<lastupdate>14/03/26</lastupdate>
 			<discoveryyear>2013</discoveryyear>
+			<minimal-code>ER</minimal-code>
 		</planet>
 		<planet>
 			<name>KOI-285.03</name>

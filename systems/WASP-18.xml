@@ -34,6 +34,7 @@
 			<discoveryyear>2009</discoveryyear>
 			<temperature>2187.5</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>SR</minimal-code>
 		</planet>
 		<name>WASP-18</name>
 		<temperature>6400.0</temperature>

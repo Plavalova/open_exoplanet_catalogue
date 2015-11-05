@@ -41,6 +41,7 @@
 				<discoveryyear>2008</discoveryyear>
 				<list>Planets in binary systems, S-type</list>
 				<istransiting>1</istransiting>
+				<minimal-code>JR</minimal-code>
 			</planet>
 			<temperature>6200.0</temperature>
 		</star>

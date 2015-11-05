@@ -29,6 +29,7 @@
 			<discoveryyear>2013</discoveryyear>
 			<transittime errorminus="0.0011" errorplus="0.0011" unit="HJD">2456128.7063</transittime>
 			<istransiting>1</istransiting>
+			<minimal-code>JR</minimal-code>
 		</planet>
 	</star>
 </system>

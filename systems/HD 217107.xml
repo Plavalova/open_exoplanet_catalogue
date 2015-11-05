@@ -24,6 +24,7 @@
 			<lastupdate>06/09/06</lastupdate>
 			<discoveryyear>1998</discoveryyear>
 			<temperature>959.9</temperature>
+			<minimal-code>JR</minimal-code>
 		</planet>
 		<planet>
 			<name>HD 217107 c</name>
@@ -36,6 +37,7 @@
 			<lastupdate>10/12/17</lastupdate>
 			<discoveryyear>1998</discoveryyear>
 			<temperature>111.1</temperature>
+			<minimal-code>JF</minimal-code>
 		</planet>
 		<name>HD 217107</name>
 		<temperature>5666.0</temperature>

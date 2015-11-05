@@ -40,6 +40,7 @@
 			<discoveryyear>2012</discoveryyear>
 			<temperature lowerlimit="506" upperlimit="702" />
 			<istransiting>1</istransiting>
+			<minimal-code>NK</minimal-code>
 		</planet>
 	</star>
 </system>

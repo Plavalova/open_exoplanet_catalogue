@@ -29,6 +29,7 @@
 			<discoveryyear>2008</discoveryyear>
 			<temperature errorminus="100" errorplus="100">1203.3</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>NR</minimal-code>
 		</planet>
 		<name>WASP-13</name>
 		<temperature errorminus="48" errorplus="48">5989</temperature>

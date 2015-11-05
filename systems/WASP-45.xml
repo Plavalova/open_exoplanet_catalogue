@@ -31,6 +31,7 @@
 			<discoveryyear>2011</discoveryyear>
 			<temperature>1094.2</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>JR</minimal-code>
 		</planet>
 		<name>WASP-45</name>
 		<temperature>5140.0</temperature>

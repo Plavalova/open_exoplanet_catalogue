@@ -30,6 +30,7 @@
 			<discoveryyear>2008</discoveryyear>
 			<temperature>1511.3</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>NR</minimal-code>
 		</planet>
 		<name>WASP-15</name>
 		<temperature>6300.0</temperature>

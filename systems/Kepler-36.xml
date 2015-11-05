@@ -37,6 +37,7 @@
 	Image credit: Harvard-Smithsonian Center for Astrophysics/David Aguilar.</imagedescription>
 			<temperature>978.8</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>ER</minimal-code>
 		</planet>
 		<planet>
 			<name>Kepler-36 c</name>
@@ -60,6 +61,7 @@
 	Image credit: Harvard-Smithsonian Center for Astrophysics/David Aguilar.</imagedescription>
 			<temperature>927.8</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>ER</minimal-code>
 		</planet>
 	</star>
 </system>

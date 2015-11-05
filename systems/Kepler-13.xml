@@ -52,6 +52,7 @@
 				<discoveryyear>2011</discoveryyear>
 				<istransiting>1</istransiting>
 				<list>Planets in binary systems, S-type</list>
+				<minimal-code>SR</minimal-code>
 			</planet>
 		</star>
 		<binary>

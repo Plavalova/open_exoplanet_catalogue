@@ -28,6 +28,7 @@
 			<discoveryyear>2007</discoveryyear>
 			<temperature>790.5</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>JR</minimal-code>
 		</planet>
 		<name>HD 17156</name>
 		<temperature>6079.0</temperature>

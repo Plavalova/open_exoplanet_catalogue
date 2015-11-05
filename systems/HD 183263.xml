@@ -24,6 +24,7 @@
 			<lastupdate>10/12/17</lastupdate>
 			<discoveryyear>2004</discoveryyear>
 			<temperature>230.5</temperature>
+			<minimal-code>JW</minimal-code>
 		</planet>
 		<planet>
 			<name>HD 183263 c</name>
@@ -36,6 +37,7 @@
 			<lastupdate>08/12/10</lastupdate>
 			<discoveryyear>2008</discoveryyear>
 			<temperature>138.0</temperature>
+			<minimal-code>JF</minimal-code>
 		</planet>
 		<name>HD 183263</name>
 		<temperature>5888.0</temperature>

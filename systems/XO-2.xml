@@ -31,6 +31,7 @@
 				<semimajoraxis errorminus="0.0025" errorplus="0.0025">0.1344</semimajoraxis>
 				<description>The planet XO-2S c is part of a multiplanetary system. The host star itself is part of a binary system. The other binary star, XO-2N also hosts a planet. This configuration makes the system a unique laboratory for understanding the diversity of planetary systems.</description>
 				<list>Planets in binary systems, S-type</list>
+				<minimal-code>NR</minimal-code>
 			</planet>
 			<planet>
 				<name>XO-2S c</name>
@@ -46,6 +47,7 @@
 				<semimajoraxis errorminus="0.0087" errorplus="0.0087">0.4756</semimajoraxis>
 				<description>The planet XO-2S c is part of a multiplanetary system. The host star itself is part of a binary system. The other binary star, XO-2N also hosts a planet. This configuration makes the system a unique laboratory for understanding the diversity of planetary systems.</description>
 				<list>Planets in binary systems, S-type</list>
+				<minimal-code>JK</minimal-code>
 			</planet>
 		</star>
 		<star>
@@ -82,6 +84,7 @@
 				<istransiting>1</istransiting>
 				<description>The planet XO-2N b was the first planet discovered in the XO-2 binary. The host star is variable (Zellem et al. 2015) which complicates the analysis of the planetary properties. The stellar variability may be caused by starspots.</description>
 				<list>Planets in binary systems, S-type</list>
+				<minimal-code>NR</minimal-code>
 			</planet>
 			<planet>
 				<name>XO-2N c</name>

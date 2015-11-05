@@ -36,6 +36,7 @@
 			<lastupdate>14/11/19</lastupdate>
 			<discoveryyear>2007</discoveryyear>
 			<temperature>200.7</temperature>
+			<minimal-code>JW</minimal-code>
 		</planet>
 		<planet>
 			<name>HD 11506 c</name>
@@ -54,6 +55,7 @@
 			<lastupdate>14/11/19</lastupdate>
 			<discoveryyear>2009</discoveryyear>
 			<temperature>388.0</temperature>
+			<minimal-code>NK</minimal-code>
 		</planet>
 		<temperature>6058.0</temperature>
 	</star>

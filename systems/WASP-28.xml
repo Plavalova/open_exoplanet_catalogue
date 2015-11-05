@@ -38,6 +38,7 @@
 			<temperature errorminus="37" errorplus="37">1468</temperature>
 			<description>WASP-28b is an inflated Jupiter-mass planet on a 3.4 day orbit. The orbit is aligned with the sky projected spin axis of the star.</description>
 			<istransiting>1</istransiting>
+			<minimal-code>JR</minimal-code>
 		</planet>
 	</star>
 </system>

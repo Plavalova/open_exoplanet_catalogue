@@ -34,6 +34,7 @@
 			<discoveryyear>2007</discoveryyear>
 			<description>The planet TrES-3 b has an orbital perdiod of just 31 hours and is undergoing orbital decay due to tidal effects.</description>
 			<istransiting>1</istransiting>
+			<minimal-code>JR</minimal-code>
 		</planet>
 	</star>
 </system>

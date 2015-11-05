@@ -32,6 +32,7 @@
 			<istransiting>1</istransiting>
 			<lastupdate>14/09/30</lastupdate>
 			<discoveryyear>2014</discoveryyear>
+			<minimal-code>NR</minimal-code>
 		</planet>
 	</star>
 </system>

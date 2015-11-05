@@ -39,6 +39,7 @@
 			<lastupdate>15/01/27</lastupdate>
 			<discoverymethod>transit</discoverymethod>
 			<istransiting>1</istransiting>
+			<minimal-code>NR</minimal-code>
 		</planet>
 		<planet>
 			<name>Kepler-101 c</name>
@@ -57,6 +58,7 @@
 			<lastupdate>15/01/27</lastupdate>
 			<discoverymethod>transit</discoverymethod>
 			<istransiting>1</istransiting>
+			<minimal-code>ER</minimal-code>
 		</planet>
 	</star>
 </system>

@@ -30,6 +30,7 @@
 			<discoveryyear>2008</discoveryyear>
 			<temperature>975.6</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>JR</minimal-code>
 		</planet>
 		<name>CoRoT-4</name>
 		<temperature>6190.0</temperature>

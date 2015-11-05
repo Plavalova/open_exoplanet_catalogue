@@ -31,6 +31,7 @@
 			<discoveryyear>2011</discoveryyear>
 			<temperature>1027.9</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>JR</minimal-code>
 		</planet>
 		<name>Kepler-15</name>
 		<name>KOI-128</name>

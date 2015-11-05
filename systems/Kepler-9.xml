@@ -36,6 +36,7 @@
 			<discoveryyear>2010</discoveryyear>
 			<temperature>707.2</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>NR</minimal-code>
 		</planet>
 		<planet>
 			<name>Kepler-9 c</name>
@@ -56,6 +57,7 @@
 			<discoveryyear>2010</discoveryyear>
 			<temperature>557.9</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>NK</minimal-code>
 		</planet>
 		<planet>
 			<name>Kepler-9 d</name>
@@ -74,6 +76,7 @@
 			<discoveryyear>2010</discoveryyear>
 			<temperature>1601.5</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>ER</minimal-code>
 		</planet>
 	</star>
 </system>

@@ -31,6 +31,7 @@
 			<temperature>1335.3</temperature>
 			<transittime errorminus="0.00055" errorplus="0.00055" unit="BJD">55431.59629</transittime>
 			<istransiting>1</istransiting>
+			<minimal-code>JR</minimal-code>
 		</planet>
 		<name>HAT-P-34</name>
 		<temperature>6442.0</temperature>

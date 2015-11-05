@@ -28,6 +28,7 @@
 			<discoveryyear>2008</discoveryyear>
 			<image>HR 8799</image>
 			<imagedescription>This image shows three planets orbiting the star HR 8799. It was obtained with the Keck II telescope on Hawaii. Credit: C. Marois et al., NRC Canada.</imagedescription>
+			<minimal-code>SF</minimal-code>
 		</planet>
 		<planet>
 			<name>HR 8799 c</name>
@@ -44,6 +45,7 @@
 			<discoveryyear>2008</discoveryyear>
 			<image>HR 8799</image>
 			<imagedescription>This image shows three planets orbiting the star HR 8799. It was obtained with the Keck II telescope on Hawaii. Credit: C. Marois et al., NRC Canada.</imagedescription>
+			<minimal-code>SF</minimal-code>
 		</planet>
 		<planet>
 			<name>HR 8799 d</name>
@@ -60,6 +62,7 @@
 			<discoveryyear>2008</discoveryyear>
 			<image>HR 8799</image>
 			<imagedescription>This image shows three planets orbiting the star HR 8799. It was obtained with the Keck II telescope on Hawaii. Credit: C. Marois et al., NRC Canada.</imagedescription>
+			<minimal-code>SF</minimal-code>
 		</planet>
 		<planet>
 			<name>HR 8799 e</name>
@@ -74,6 +77,7 @@
 			<image>HR 8799</image>
 			<imagedescription>This image shows three planets orbiting the star HR 8799. It was obtained with the Keck II telescope on Hawaii. Credit: C. Marois et al., NRC Canada.</imagedescription>
 			<temperature>104.0</temperature>
+			<minimal-code>SF</minimal-code>
 		</planet>
 		<name>HR 8799</name>
 		<temperature>9790.0</temperature>

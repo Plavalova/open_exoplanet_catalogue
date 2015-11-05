@@ -39,6 +39,7 @@
 		ESO/L. Calcada</imagedescription>
 			<temperature>1316.1</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>JR</minimal-code>
 		</planet>
 		<name>HD 209458</name>
 	</star>

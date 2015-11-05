@@ -48,6 +48,7 @@
 			<discoveryyear>2012</discoveryyear>
 			<temperature>749.0</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>NR</minimal-code>
 		</planet>
 	</star>
 </system>

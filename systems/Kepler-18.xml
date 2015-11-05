@@ -35,6 +35,7 @@
 			<discoveryyear>2011</discoveryyear>
 			<temperature>1181.7</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>ER</minimal-code>
 		</planet>
 		<planet>
 			<name>Kepler-18 c</name>
@@ -56,6 +57,7 @@
 			<discoveryyear>2011</discoveryyear>
 			<temperature>911.1</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>NR</minimal-code>
 		</planet>
 		<planet>
 			<name>Kepler-18 d</name>
@@ -76,6 +78,7 @@
 			<discoveryyear>2011</discoveryyear>
 			<temperature>729.8</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>NR</minimal-code>
 		</planet>
 	</star>
 </system>

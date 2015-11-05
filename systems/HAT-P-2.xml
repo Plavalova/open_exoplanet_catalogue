@@ -35,6 +35,7 @@
 			<temperature>1343.6</temperature>
 			<transittime errorminus="0.0030" errorplus="0.0053" unit="BJD">2454213.4801</transittime>
 			<istransiting>1</istransiting>
+			<minimal-code>SR</minimal-code>
 		</planet>
 		<name>HAT-P-2</name>
 		<temperature>6290.0</temperature>

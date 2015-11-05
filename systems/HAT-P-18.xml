@@ -30,6 +30,7 @@
 			<temperature errorminus="15" errorplus="15">841</temperature>
 			<transittime errorminus="0.2174" errorplus="0.2174" unit="BJD">2454715.02174</transittime>
 			<istransiting>1</istransiting>
+			<minimal-code>NR</minimal-code>
 		</planet>
 		<name>HAT-P-18</name>
 		<temperature errorminus="50" errorplus="50">4870</temperature>

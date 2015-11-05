@@ -41,6 +41,7 @@
 			<discoveryyear>2013</discoveryyear>
 			<temperature>600</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>NR</minimal-code>
 		</planet>
 	</star>
 </system>

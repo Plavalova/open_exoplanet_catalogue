@@ -27,6 +27,7 @@
 			<discoveryyear>2004</discoveryyear>
 			<temperature>1812.0</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>JR</minimal-code>
 		</planet>
 		<name>OGLE-TR-132</name>
 		<temperature>6210.0</temperature>

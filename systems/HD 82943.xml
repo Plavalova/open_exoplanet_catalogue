@@ -28,6 +28,7 @@
 			<lastupdate>13/06/05</lastupdate>
 			<discoveryyear>2003</discoveryyear>
 			<temperature>250.5</temperature>
+			<minimal-code>JW</minimal-code>
 		</planet>
 		<planet>
 			<name>HD 82943 c</name>
@@ -44,6 +45,7 @@
 			<lastupdate>13/06/05</lastupdate>
 			<discoveryyear>2003</discoveryyear>
 			<temperature>314.7</temperature>
+			<minimal-code>JK</minimal-code>
 		</planet>
 	</star>
 </system>

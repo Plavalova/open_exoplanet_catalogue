@@ -33,6 +33,7 @@
 			<discoveryyear>2010</discoveryyear>
 			<temperature>1781.4</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>SR</minimal-code>
 		</planet>
 		<name>CoRoT-14</name>
 		<temperature>6035.0</temperature>

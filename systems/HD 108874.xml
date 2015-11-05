@@ -26,6 +26,7 @@
 			<lastupdate>10/12/29</lastupdate>
 			<discoveryyear>2003</discoveryyear>
 			<temperature>256.8</temperature>
+			<minimal-code>JW</minimal-code>
 		</planet>
 		<planet>
 			<name>HD 108874 c</name>
@@ -38,6 +39,7 @@
 			<lastupdate>10/12/29</lastupdate>
 			<discoveryyear>2005</discoveryyear>
 			<temperature>160.2</temperature>
+			<minimal-code>JF</minimal-code>
 		</planet>
 		<name>HD 108874</name>
 		<temperature>5407.0</temperature>

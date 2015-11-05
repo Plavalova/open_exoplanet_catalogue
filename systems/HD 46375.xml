@@ -32,6 +32,7 @@
 				<description>This star is on its way to becoming a red giant. It is considerably older than the sun. It has a stellar companion at a distance of 314 astronomical units.</description>
 				<list>Planets in binary systems, S-type</list>
 				<temperature>1132.0</temperature>
+				<minimal-code>NR</minimal-code>
 			</planet>
 			<temperature>5199.0</temperature>
 		</star>

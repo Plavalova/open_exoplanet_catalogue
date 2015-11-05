@@ -29,6 +29,7 @@
 			<discoveryyear>2009</discoveryyear>
 			<temperature>875.4</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>NR</minimal-code>
 		</planet>
 		<name>HAT-P-12</name>
 		<temperature>4650.0</temperature>

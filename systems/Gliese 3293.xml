@@ -38,6 +38,7 @@
 			<discoverymethod>RV</discoverymethod>
 			<lastupdate>14/11/25</lastupdate>
 			<discoveryyear>2014</discoveryyear>
+			<minimal-code>NW</minimal-code>
 		</planet>
 		<planet>
 			<name>Gliese 3293 d</name>
@@ -57,6 +58,7 @@
 			<discoverymethod>RV</discoverymethod>
 			<lastupdate>14/11/25</lastupdate>
 			<discoveryyear>2014</discoveryyear>
+			<minimal-code>NF</minimal-code>
 		</planet>
 		<planet>
 			<name>Gliese 3293 c</name>
@@ -76,6 +78,7 @@
 			<discoverymethod>RV</discoverymethod>
 			<lastupdate>14/11/25</lastupdate>
 			<discoveryyear>2014</discoveryyear>
+			<minimal-code>EW</minimal-code>
 		</planet>
 	</star>
 </system>

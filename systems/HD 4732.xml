@@ -30,6 +30,7 @@
 			<discoverymethod>RV</discoverymethod>
 			<lastupdate>12/10/26</lastupdate>
 			<discoveryyear>2012</discoveryyear>
+			<minimal-code>JK</minimal-code>
 		</planet>
 		<planet>
 			<name>HD 4732 c</name>
@@ -45,6 +46,7 @@
 			<discoverymethod>RV</discoverymethod>
 			<lastupdate>12/10/26</lastupdate>
 			<discoveryyear>2012</discoveryyear>
+			<minimal-code>JW</minimal-code>
 		</planet>
 	</star>
 	<videolink>http://youtu.be/iPuHKvxb_Wg</videolink>

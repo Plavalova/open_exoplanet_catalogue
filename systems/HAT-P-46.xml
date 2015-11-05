@@ -36,6 +36,7 @@
 			<lastupdate>13/08/16</lastupdate>
 			<discoveryyear>2013</discoveryyear>
 			<istransiting>1</istransiting>
+			<minimal-code>NR</minimal-code>
 		</planet>
 		<planet>
 			<name>HAT-P-46 c</name>
@@ -45,6 +46,7 @@
 			<eccentricity>0</eccentricity>
 			<discoverymethod>RV</discoverymethod>
 			<discoveryyear>2013</discoveryyear>
+			<minimal-code>JK</minimal-code>
 		</planet>
 	</star>
 </system>

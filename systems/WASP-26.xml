@@ -32,6 +32,7 @@
 			<discoveryyear>2010</discoveryyear>
 			<temperature>1521.3</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>JR</minimal-code>
 		</planet>
 		<name>WASP-26</name>
 		<temperature>5950.0</temperature>

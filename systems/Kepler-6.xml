@@ -30,6 +30,7 @@
 			<discoveryyear>2010</discoveryyear>
 			<temperature>1374.1</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>JR</minimal-code>
 		</planet>
 		<name>Kepler-6</name>
 		<name>KOI-17</name>

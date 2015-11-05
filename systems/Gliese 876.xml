@@ -33,6 +33,7 @@
 			<lastupdate>13/05/11</lastupdate>
 			<discoveryyear>2000</discoveryyear>
 			<temperature>194.2</temperature>
+			<minimal-code>JW</minimal-code>
 		</planet>
 		<planet>
 			<name>Gliese 876 c</name>
@@ -52,6 +53,7 @@
 			<lastupdate>13/05/11</lastupdate>
 			<discoveryyear>2000</discoveryyear>
 			<temperature>245.2</temperature>
+			<minimal-code>JW</minimal-code>
 		</planet>
 		<planet>
 			<name>Gliese 876 d</name>
@@ -71,6 +73,7 @@
 			<lastupdate>13/05/11</lastupdate>
 			<discoveryyear>2005</discoveryyear>
 			<temperature>612.8</temperature>
+			<minimal-code>EK</minimal-code>
 		</planet>
 		<planet>
 			<name>Gliese 876 e</name>
@@ -93,6 +96,7 @@
 			<imagedescription>Artist's impression of Gliese 876 e, a member of a multi-planetary system. The illustration shows the planet from the perspective of a hypothetical moon orbiting.
 
 Credit: Jonah Gallagher.</imagedescription>
+			<minimal-code>NF</minimal-code>
 		</planet>
 		<name>Gliese 876</name>
 		<temperature>3350.0</temperature>

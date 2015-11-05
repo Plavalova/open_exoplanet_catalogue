@@ -33,6 +33,7 @@
 				<lastupdate>14/09/29</lastupdate>
 				<discoveryyear>2014</discoveryyear>
 				<list>Planets in binary systems, S-type</list>
+				<minimal-code>NR</minimal-code>
 			</planet>
 		</star>
 		<star>
@@ -58,6 +59,7 @@
 				<lastupdate>14/09/29</lastupdate>
 				<discoveryyear>2014</discoveryyear>
 				<list>Planets in binary systems, S-type</list>
+				<minimal-code>JR</minimal-code>
 			</planet>
 		</star>
 	</binary>

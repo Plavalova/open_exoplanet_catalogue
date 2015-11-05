@@ -24,6 +24,7 @@
 			<lastupdate>09/10/06</lastupdate>
 			<discoveryyear>2004</discoveryyear>
 			<temperature>664.2</temperature>
+			<minimal-code>NR</minimal-code>
 		</planet>
 		<planet>
 			<name>HD 117618.02</name>
@@ -38,6 +39,7 @@
 			<discoverymethod>RV</discoverymethod>
 			<discoveryyear>2013</discoveryyear>
 			<lastupdate>15/04/23</lastupdate>
+			<minimal-code>NK</minimal-code>
 		</planet>
 		<name>HD 117618</name>
 		<temperature>5861.0</temperature>

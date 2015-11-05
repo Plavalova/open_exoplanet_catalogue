@@ -39,6 +39,7 @@
 				<description>WASP-2 is an orange dwarf star that hosts the exoplanet WASP-2 b. It was discovered with the SuperWASP survey in 2006.</description>
 				<temperature>1170.7</temperature>
 				<istransiting>1</istransiting>
+				<minimal-code>JR</minimal-code>
 			</planet>
 		</star>
 		<star>

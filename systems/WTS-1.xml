@@ -30,6 +30,7 @@
 			<discoveryyear>2012</discoveryyear>
 			<temperature>1362.3</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>JR</minimal-code>
 		</planet>
 		<name>WTS-1</name>
 	</star>

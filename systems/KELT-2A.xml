@@ -35,6 +35,7 @@
 			<discoveryyear>2012</discoveryyear>
 			<temperature>1565.7</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>JR</minimal-code>
 		</planet>
 		<name>KELT-2A</name>
 		<temperature>6148.0</temperature>

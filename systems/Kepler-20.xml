@@ -38,6 +38,7 @@
 			<discoveryyear>2011</discoveryyear>
 			<temperature>1092.1</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>ER</minimal-code>
 		</planet>
 		<planet>
 			<name>Kepler-20 c</name>
@@ -58,6 +59,7 @@
 			<discoveryyear>2011</discoveryyear>
 			<temperature>759.9</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>NR</minimal-code>
 		</planet>
 		<planet>
 			<name>Kepler-20 d</name>
@@ -78,6 +80,7 @@
 			<discoveryyear>2011</discoveryyear>
 			<temperature>388.6</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>NK</minimal-code>
 		</planet>
 		<planet>
 			<name>Kepler-20 e</name>

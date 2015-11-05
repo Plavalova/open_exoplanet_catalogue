@@ -30,6 +30,7 @@
 			<discoveryyear>2010</discoveryyear>
 			<temperature>1652.1</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>JR</minimal-code>
 		</planet>
 		<name>Kepler-5</name>
 		<name>KOI-18</name>

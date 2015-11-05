@@ -45,6 +45,7 @@
 				<transittime errorminus="0.00009" errorplus="0.00009" unit="BJD">2454420.44637</transittime>
 				<istransiting>1</istransiting>
 				<list>Planets in binary systems, S-type</list>
+				<minimal-code>JR</minimal-code>
 			</planet>
 		</star>
 		<star>

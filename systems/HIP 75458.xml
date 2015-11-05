@@ -33,6 +33,7 @@
 			<discoveryyear>2002</discoveryyear>
 			<description>The planet iota Droconis b has a very eccentric orbit. Kanet et al (2010) report a transit probability that is higher than that of a typical Hot Jupiter in a 5 day orbit. However, the weakness of the transit signal requires space-based observations to achieve an unambiguous transit detection.</description>
 			<temperature>598.2</temperature>
+			<minimal-code>SK</minimal-code>
 		</planet>
 		<temperature>4445.0</temperature>
 	</star>

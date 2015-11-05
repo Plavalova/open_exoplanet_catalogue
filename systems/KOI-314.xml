@@ -35,6 +35,7 @@
 			<discoveryyear>2014</discoveryyear>
 			<description>This planet has been confirmed by researchers trying to find extrasolar moons. Although no exo-moon was detected, they were able to confirm the planetary nature of the transit signal by using transit timing variations (TTV). These variations are due to planets pulling on each other gravitationally, therefore extending or shrinking the time between transits. There is another planet candidate in the system which has not been confirmed yet.</description>
 			<istransiting>1</istransiting>
+			<minimal-code>EK</minimal-code>
 		</planet>
 		<planet>
 			<name>KOI-314 c</name>
@@ -54,6 +55,7 @@
 			<discoveryyear>2014</discoveryyear>
 			<description>This planet has been confirmed by researchers trying to find extrasolar moons. Although no exo-moon was detected, they were able to confirm the planetary nature of the transit signal by using transit timing variations (TTV). These variations are due to planets pulling on each other gravitationally, therefore extending or shrinking the time between transits. There is another planet candidate in the system which has not been confirmed yet.</description>
 			<istransiting>1</istransiting>
+			<minimal-code>EK</minimal-code>
 		</planet>
 		<planet>
 			<name>Kepler-138 b</name>

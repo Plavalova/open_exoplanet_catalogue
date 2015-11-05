@@ -36,6 +36,7 @@
 			<spinorbitalignment>7.5</spinorbitalignment>
 			<temperature>1152.9</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>JR</minimal-code>
 		</planet>
 		<name>WASP-38</name>
 		<temperature>6150.0</temperature>

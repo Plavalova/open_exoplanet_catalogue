@@ -30,6 +30,7 @@
 			<discoveryyear>2011</discoveryyear>
 			<temperature>1179.7</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>JR</minimal-code>
 		</planet>
 		<name>Qatar-2</name>
 		<temperature>4645.0</temperature>

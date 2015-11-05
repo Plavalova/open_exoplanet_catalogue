@@ -31,6 +31,7 @@
 			<list>Confirmed planets</list>
 			<description>The minimum mass of this object is above the deuterium-burning threshold but below the midpoint of the brown dwarf desert. The parent star is near the base of the red giant branch.</description>
 			<lastupdate>15/01/06</lastupdate>
+			<minimal-code>DK</minimal-code>
 		</planet>
 	</star>
 </system>

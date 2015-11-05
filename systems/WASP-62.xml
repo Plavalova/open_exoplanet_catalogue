@@ -50,6 +50,7 @@
 			<discoveryyear>2011</discoveryyear>
 			<temperature>1305.2</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>NR</minimal-code>
 		</planet>
 		<temperature>6230.0</temperature>
 	</star>

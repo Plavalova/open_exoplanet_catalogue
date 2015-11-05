@@ -9,13 +9,15 @@ import datetime
 import re
 import math
 
-num_format = re.compile(r'^\s*[+\-]?\s*(\d+\.?\d*|\d*\.?\d+)s*(?:[eE]\s*[\-+]?\s*\d+)?\s*')  # TODO check if this works
+num_format = re.compile(r'(?:^\s*([+\-]?(?:\d+\.?\d*|\d*\.?\d+)(?:[eE][\-+]?\d+)?)\s*$)')
 
 # Variables to keep track of progress
 fileschecked = 0
 issues = 0
 xmlerrors = 0
 fileschanged = 0
+
+minimal_code = 0
 
 
 # Calculate md5 hash to check for changes in file.
@@ -143,11 +145,13 @@ def checkforvaliderrors(elem):
         for a in nonzeroattributes:
             try:
                 if a in elem.attrib and (not elem.attrib[a] or float(elem.attrib[a]) == 0.):
-                    deleteattribs.append(a)
+                    print "Warning: deleting error bars with value 0 in tag "+elem.tag
+                    elem.attrib.pop(a)
+                    # deleteattribs.append(a)
             except ValueError as e:
                 print "Warning probrem reading error bars in tag " + elem.tag
                 print e
-                deleteattribs.append(a) # It's rubbish
+                elem.attrib.pop(a)
         #
         # for a in elem.attrib:
         #     if a in nonzeroattributes:
@@ -157,9 +161,9 @@ def checkforvaliderrors(elem):
         #         except:
         #             print "Warning: problem reading error bars in tag "+elem.tag
         #             return 1
-        for a in deleteattribs:
-            print "Warning: deleting error bars with value 0 in tag "+elem.tag
-            del elem.attrib[a]
+        # for a in deleteattribs:
+        #     print "Warning: deleting error bars with value 0 in tag "+elem.tag
+        #     del elem.attrib[a]
         if "errorplus" in elem.attrib:
             if not "errorminus" in elem.attrib:
                 print "Warning: one sided error found in tag "+elem.tag+". Fixing it."
@@ -175,10 +179,10 @@ def checkforvaliderrors(elem):
 
 
 # Convert units (makes data entry easier)
-def convertunitattrib(elem, attribname, factor):
-    if not hasattr(attribname, '__iter__'):
-        attribname = {attribname,}
-    for attrib in set(attribname).intersection(elem.attrib.keys()):
+def convert_unit_attrib(elem, attrib_name, factor):
+    if not hasattr(attrib_name, '__iter__'):
+        attrib_name = {attrib_name,}
+    for attrib in set(attrib_name).intersection(elem.attrib.keys()):
         elem.attrib[attrib] = "%f" % (float(elem.attrib[attrib]) * factor)
 
 
@@ -190,7 +194,7 @@ def convertunit(elem, factor):
     del elem.attrib['unit']
     if elem.text:
         elem.text = "%f" % (float(elem.text) * factor)
-    convertunitattrib(elem, UNIT_CONVERSION_SET, factor)
+    convert_unit_attrib(elem, UNIT_CONVERSION_SET, factor)
 
 
 def checkForBinaryPlanet(root, criteria, liststring):
@@ -260,15 +264,16 @@ def average_dyson_temperature(eccentricity, distance, star_temperature, star_rad
     if distance <= 0 or star_temperature <= 0 or star_radius <= 0:
         raise ValueError('Invalid value present')
     temperature_sum = 0.
+    angle = 0.
     for k in xrange(0, 10, 1):
-        angle = math.pi / 5 * k
+        angle += math.pi / 5.
         e1 = angle + eccentricity * math.sin(angle)
         m1 = e1 - eccentricity * math.sin(e1)
         e2 = e1 + (angle - m1) / (1. - eccentricity * math.cos(e1))
         m2 = e2 - eccentricity * math.sin(e2)
-        e3 = e2 + (angle - m2) / (1 - eccentricity * math.cos(e1))
-        r = distance * (1 - eccentricity * math.cos(e3))
-        temperature_sum += (((star_temperature ** 4 * star_radius ** 2) / (r ** 2)) ** (1/4))/10.
+        e3 = e2 + (angle - m2) / (1. - eccentricity * math.cos(e1))
+        r = distance * (1. - eccentricity * math.cos(e3))
+        temperature_sum += (((star_temperature ** 4 * star_radius ** 2) / (r ** 2)) ** (1./4))/10.
     return temperature_sum
 
 
@@ -316,7 +321,7 @@ def is_pulsar_nearby(obj):
     :param obj: Element
     :return: bool
     """
-    for name in obj.findall(".//name"):
+    for name in obj.findall("*/name"):
         return name.text.strip().startswith("PSR")
 
 
@@ -347,25 +352,34 @@ def create_or_overwrite(element, tag, value):
 
 
 
-def get_value(obj, tag, parser=float):
+def get_value(element, tag, parser=float):
     """
     Returns parsed value of element tree object from within tag. If parser is None then return element value string
     representation.
-    :param obj: element tree object
+    :param element: Element
     :param tag: string
     :param parser: parser callback
     :return: object parsed value
     """
-    element = ".//%s" % tag
-    for value in obj.findall(element):
+    for value in element.findall(tag):
         try:
+            if not value.text:
+                if 'upperlimit' in value.attrib:
+                    return parser(value.attrib['upperlimit']) if parser else value.attrib['upperlimit']
+                if 'lowerlimit' in value.attrib:
+                    return parser(value.attrib['lowerlimit']) if parser else value.attrib['lowerlimit']
             return parser(value.text) if parser else value.text
-        except:
+        except Exception as e:
+            print e.message
             continue
     raise ValueError("Tag %s not found in element" % tag)
 
 
 # Loop over all files and  create new data
+def start_radius_in_au(star_radius):
+    return 4.65247e-3 * star_radius
+
+
 for filename in glob.glob("systems*/*.xml"):
     fileschecked += 1
 
@@ -381,11 +395,13 @@ for filename in glob.glob("systems*/*.xml"):
             planets = root.findall(".//planet")
             stars = root.findall(".//star")
             binaries = root.findall(".//binary")
+            if len(root.findall('.//minimal-code')):
+                minimal_code += 1
         except ET.ParseError as error:
             print '{}, {}'.format(filename, error)
             xmlerrors += 1
             issues += 1
-            f.close()
+            # f.close()
             continue
         finally:
             f.close()
@@ -416,11 +432,11 @@ for filename in glob.glob("systems*/*.xml"):
                 star_radius = get_radius(star)
                 for planet in star.findall(".//planet"):
                     try:
-                        eccentricity = get_eccentricity(planet) # TODO make method for this call
+                        eccentricity = get_eccentricity(planet)
                         distance = get_value(planet, "semimajoraxis")
                         _temp = -1.  # This value is not reachable
                         if not pulsar:
-                            _temp = average_dyson_temperature(eccentricity, distance, star_temperature, star_radius)
+                            _temp = average_dyson_temperature(eccentricity, distance, star_temperature, start_radius_in_au(star_radius))
                         min_code = create_minimal_code(
                             get_mass(planet),
                             _temp,
@@ -522,6 +538,8 @@ print "Cleanup script finished. %d files checked." % fileschecked
 if fileschanged > 0:
     print "%d file(s) modified." % fileschanged
     errorcode = 1
+
+print "Minimal code computed: %d" % minimal_code
 
 if xmlerrors > 0:
     print "%d XML errors found." % xmlerrors

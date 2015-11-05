@@ -28,6 +28,7 @@
 			<discoveryyear>2004</discoveryyear>
 			<temperature>940.0</temperature>
 			<istransiting>1</istransiting>
+			<minimal-code>NR</minimal-code>
 		</planet>
 		<name>OGLE-TR-111</name>
 		<temperature>5070.0</temperature>
