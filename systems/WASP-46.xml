@@ -32,6 +32,7 @@
 			<temperature>1516.6</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>JR</minimal-code>
+			<full-code>J-1.6R0</full-code>
 		</planet>
 		<name>WASP-46</name>
 		<temperature>5620.0</temperature>

@@ -33,6 +33,7 @@
 			<temperature>1207.5</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>JR</minimal-code>
+			<full-code>J-1.4R0</full-code>
 		</planet>
 		<name>WASP-41</name>
 		<temperature>5450.0</temperature>

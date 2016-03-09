@@ -45,6 +45,7 @@
 				<istransiting>1</istransiting>
 				<list>Planets in binary systems, S-type</list>
 				<minimal-code>NR</minimal-code>
+				<full-code>N-1.4R0</full-code>
 			</planet>
 		</star>
 		<star>

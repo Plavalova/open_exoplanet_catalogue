@@ -42,6 +42,7 @@
 			<temperature errorminus="13" errorplus="12">757</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>ER</minimal-code>
+			<full-code>E-1.1R1</full-code>
 		</planet>
 	</star>
 </system>

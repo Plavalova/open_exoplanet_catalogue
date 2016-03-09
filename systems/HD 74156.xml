@@ -26,7 +26,8 @@
 			<lastupdate>10/12/21</lastupdate>
 			<discoveryyear>2003</discoveryyear>
 			<temperature>602.9</temperature>
-			<minimal-code>JK</minimal-code>
+			<minimal-code>JG</minimal-code>
+			<full-code>J-0.5G6</full-code>
 		</planet>
 		<planet>
 			<name>HD 74156 c</name>
@@ -40,6 +41,7 @@
 			<discoveryyear>2003</discoveryyear>
 			<temperature>180.3</temperature>
 			<minimal-code>SW</minimal-code>
+			<full-code>S0.5W4</full-code>
 		</planet>
 		<name>HD 74156</name>
 		<temperature>5960.0</temperature>

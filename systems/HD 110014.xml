@@ -23,7 +23,8 @@
 			<lastupdate>15/05/24</lastupdate>
 			<discoveryyear>2009</discoveryyear>
 			<description>HD 110014 b is a planet in an eccentric orbit around a red giant star.</description>
-			<minimal-code>SK</minimal-code>
+			<minimal-code>SG</minimal-code>
+			<full-code>S0.4G3</full-code>
 		</planet>
 		<planet>
 			<name>HD 110014 c</name>
@@ -39,6 +40,7 @@
 			<discoveryyear>2015</discoveryyear>
 			<description>The planet HD 110014 c was discovered by the Reanalysis of Archival FEROS specTra (RAFT) program. The outer planet HD 110014 b was already known.</description>
 			<minimal-code>JR</minimal-code>
+			<full-code>J-0.2R4</full-code>
 		</planet>
 		<name>HD 110014</name>
 		<temperature>4445.0</temperature>

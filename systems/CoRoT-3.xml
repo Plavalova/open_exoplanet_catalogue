@@ -34,6 +34,7 @@
 			<transittime errorminus="0.0003" errorplus="0.0003" unit="BJD">2454283.1390</transittime>
 			<istransiting>1</istransiting>
 			<minimal-code>DR</minimal-code>
+			<full-code>D-1.2R0</full-code>
 		</planet>
 		<name>CoRoT-3</name>
 		<temperature errorminus="140" errorplus="140">6740</temperature>

@@ -35,6 +35,7 @@
 			<description>HIP 67851 b is one of the rare examples of a close-in planet orbiting a red giant star.</description>
 			<lastupdate>15/01/06</lastupdate>
 			<minimal-code>JR</minimal-code>
+			<full-code>J-0.4R1</full-code>
 		</planet>
 		<planet>
 			<name>HIP 67851 c</name>
@@ -50,6 +51,7 @@
 			<description>HIP 67851 c orbits a red giant star. Currently the parameters are sufficiently uncertain that it is not clear whether or not it will be engulfed during the further expansion of its parent star.</description>
 			<lastupdate>15/01/06</lastupdate>
 			<minimal-code>SW</minimal-code>
+			<full-code>S0.6W1</full-code>
 		</planet>
 	</star>
 </system>

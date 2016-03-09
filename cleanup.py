@@ -290,7 +290,7 @@ MINIMAL_CODE_MASS = (
 MINIMAL_CODE_TEMPERATURE = (
     (0., 250., 'F'),
     (250., 450., 'W'),
-    (450., 1000., 'K'),
+    (450., 1000., 'G'),
     (1000., float('inf'), 'R'),
 )
 
@@ -300,6 +300,13 @@ def create_minimal_code(mass, temperature, orbits_around_pulsar=False):
         raise ValueError("Invalid temperature")
     return ''.join((find_best_interval(mass, MINIMAL_CODE_MASS),
                     find_best_interval(temperature, MINIMAL_CODE_TEMPERATURE) if not orbits_around_pulsar else 'P'))
+
+
+def create_full_code(mass, distance, temparature, eccentricity):
+    min_code = create_minimal_code(mass, temparature)
+    log_dst = math.log10(distance)
+    ecc_code = int(round(eccentricity * 10))
+    return "%s%.1f%s%d" % (min_code[0], log_dst, min_code[1], ecc_code)
 
 
 def find_best_interval(value, intervals):
@@ -350,6 +357,11 @@ def create_or_overwrite(element, tag, value):
         child.text = value
         element.append(child)
 
+
+def remove_element(element, tag):
+    search_for_tag = ".//%s" % tag
+    for tag_element in element.findall(search_for_tag):
+        element.remove(tag_element)
 
 
 def get_value(element, tag, parser=float):
@@ -442,7 +454,11 @@ for filename in glob.glob("systems*/*.xml"):
                             _temp,
                             pulsar
                         )
+                        full_code = create_full_code(get_mass(planet), distance, _temp, eccentricity)
                         create_or_overwrite(planet, "minimal-code", min_code)
+                        create_or_overwrite(planet, "full-code", full_code)
+                        remove_element(planet, "dyson-temperature")
+                        remove_element(planet, "d-temp")
                     except ValueError:
                         continue
             except ValueError:

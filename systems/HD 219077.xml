@@ -28,6 +28,7 @@
 			<discoveryyear>2012</discoveryyear>
 			<temperature>124.9</temperature>
 			<minimal-code>SF</minimal-code>
+			<full-code>S0.8F8</full-code>
 		</planet>
 		<temperature>5362.0</temperature>
 	</star>

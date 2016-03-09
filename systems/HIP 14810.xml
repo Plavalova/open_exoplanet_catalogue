@@ -25,6 +25,7 @@
 			<discoveryyear>2006</discoveryyear>
 			<temperature>918.2</temperature>
 			<minimal-code>JR</minimal-code>
+			<full-code>J-1.2R1</full-code>
 		</planet>
 		<planet>
 			<name>HIP 14810 c</name>
@@ -37,7 +38,8 @@
 			<lastupdate>09/06/03</lastupdate>
 			<discoveryyear>2006</discoveryyear>
 			<temperature>327.0</temperature>
-			<minimal-code>JK</minimal-code>
+			<minimal-code>JG</minimal-code>
+			<full-code>J-0.3G2</full-code>
 		</planet>
 		<planet>
 			<name>HIP 14810 d</name>
@@ -51,6 +53,7 @@
 			<discoveryyear>2009</discoveryyear>
 			<temperature>175.6</temperature>
 			<minimal-code>NW</minimal-code>
+			<full-code>N0.3W2</full-code>
 		</planet>
 		<name>HIP 14810</name>
 		<temperature>5485.0</temperature>

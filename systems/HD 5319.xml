@@ -38,7 +38,8 @@
 			<lastupdate>14/11/19</lastupdate>
 			<discoveryyear>2007</discoveryyear>
 			<temperature>303.8</temperature>
-			<minimal-code>JK</minimal-code>
+			<minimal-code>JG</minimal-code>
+			<full-code>J0.2G0</full-code>
 		</planet>
 		<planet>
 			<name>HD 5319 c</name>
@@ -58,6 +59,7 @@
 			<lastupdate>14/11/19</lastupdate>
 			<discoveryyear>2014</discoveryyear>
 			<minimal-code>JW</minimal-code>
+			<full-code>J0.3W2</full-code>
 		</planet>
 		<temperature>5052.0</temperature>
 	</star>

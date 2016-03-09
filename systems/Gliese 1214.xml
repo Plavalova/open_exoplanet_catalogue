@@ -42,7 +42,8 @@ Credit: NASA, ESA, and D. Aguilar (Harvard-Smithsonian Center for Astrophysics).
 			<temperature errorminus="19" errorplus="19">604</temperature>
 			<transittime errorminus="0.00010" errorplus="0.00010" unit="BJD">2454980.74900</transittime>
 			<istransiting>1</istransiting>
-			<minimal-code>EK</minimal-code>
+			<minimal-code>EG</minimal-code>
+			<full-code>E-1.8G0</full-code>
 		</planet>
 	</star>
 </system>

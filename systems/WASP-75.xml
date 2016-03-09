@@ -35,6 +35,7 @@
 			<description>WASP-75 b is a transiting Hot Jupiter. Its radius is slightly inflated as compared to theoretical planet models with no core.</description>
 			<istransiting>1</istransiting>
 			<minimal-code>JR</minimal-code>
+			<full-code>J-1.4R0</full-code>
 		</planet>
 	</star>
 </system>

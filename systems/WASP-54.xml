@@ -33,6 +33,7 @@
 			<discoveryyear>2011</discoveryyear>
 			<istransiting>1</istransiting>
 			<minimal-code>JR</minimal-code>
+			<full-code>J-1.3R1</full-code>
 		</planet>
 		<name>WASP-54</name>
 	</star>

@@ -38,6 +38,7 @@
 			<temperature>978.8</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>ER</minimal-code>
+			<full-code>E-0.9R0</full-code>
 		</planet>
 		<planet>
 			<name>Kepler-36 c</name>
@@ -62,6 +63,7 @@
 			<temperature>927.8</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>ER</minimal-code>
+			<full-code>E-0.9R0</full-code>
 		</planet>
 	</star>
 </system>

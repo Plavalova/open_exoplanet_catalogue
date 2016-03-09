@@ -32,7 +32,8 @@
 			<lastupdate>15/05/03</lastupdate>
 			<list>Confirmed planets</list>
 			<istransiting>1</istransiting>
-			<minimal-code>JK</minimal-code>
+			<minimal-code>JG</minimal-code>
+			<full-code>J-0.3G2</full-code>
 		</planet>
 		<planet>
 			<name>KOI-372 c</name>

@@ -33,6 +33,7 @@
 			<transittime errorminus="0.00038" errorplus="0.00038" unit="BJD">2454779.92979</transittime>
 			<istransiting>1</istransiting>
 			<minimal-code>JR</minimal-code>
+			<full-code>J-1.4R0</full-code>
 		</planet>
 		<planet>
 			<name>HAT-P-13 c</name>
@@ -51,6 +52,7 @@
 			<temperature>276.2</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>SW</minimal-code>
+			<full-code>S0.1W7</full-code>
 		</planet>
 		<name>HAT-P-13</name>
 		<temperature>5638.0</temperature>

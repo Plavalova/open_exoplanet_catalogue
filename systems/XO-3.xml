@@ -30,6 +30,7 @@
 			<temperature>1554.5</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>SR</minimal-code>
+			<full-code>S-1.3R3</full-code>
 		</planet>
 		<name>XO-3</name>
 		<temperature>6429.0</temperature>

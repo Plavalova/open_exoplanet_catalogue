@@ -25,6 +25,7 @@
 			<discoveryyear>2009</discoveryyear>
 			<temperature>1054.4</temperature>
 			<minimal-code>ER</minimal-code>
+			<full-code>E-1.3R1</full-code>
 		</planet>
 		<planet>
 			<name>61 Vir c</name>
@@ -37,7 +38,8 @@
 			<lastupdate>09/12/15</lastupdate>
 			<discoveryyear>2009</discoveryyear>
 			<temperature>506.4</temperature>
-			<minimal-code>NK</minimal-code>
+			<minimal-code>NG</minimal-code>
+			<full-code>N-0.7G1</full-code>
 		</planet>
 		<planet>
 			<name>61 Vir d</name>
@@ -50,7 +52,8 @@
 			<lastupdate>09/12/15</lastupdate>
 			<discoveryyear>2009</discoveryyear>
 			<temperature>340.0</temperature>
-			<minimal-code>NK</minimal-code>
+			<minimal-code>NG</minimal-code>
+			<full-code>N-0.3G4</full-code>
 		</planet>
 		<name>61 Vir</name>
 		<temperature>5531.0</temperature>

@@ -40,7 +40,8 @@
 				<lastupdate>14/11/06</lastupdate>
 				<description>Reffert &amp; Quirrenbach (2011) derive a best-fit inclination of 177.8° giving a true mass of 263 Jupiter masses. While the 3-sigma error region allows inclinations from 2° to 178.8°, the highest probability density is for nearly face-on orbits.</description>
 				<list>Planets in binary systems, S-type</list>
-				<minimal-code>DK</minimal-code>
+				<minimal-code>DG</minimal-code>
+				<full-code>D0.0G8</full-code>
 			</planet>
 		</star>
 		<star>

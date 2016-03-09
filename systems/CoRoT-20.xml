@@ -35,6 +35,7 @@
 			<temperature errorminus="24" errorplus="24">1002</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>JR</minimal-code>
+			<full-code>J-1.0R6</full-code>
 		</planet>
 		<name>CoRoT-20</name>
 		<temperature errorminus="90" errorplus="90">5880.0</temperature>

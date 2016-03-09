@@ -22,6 +22,7 @@
 			<discoveryyear>2002</discoveryyear>
 			<temperature>277.6</temperature>
 			<minimal-code>DW</minimal-code>
+			<full-code>D-0.1W4</full-code>
 		</planet>
 		<planet>
 			<name>HD 202206 c</name>
@@ -35,6 +36,7 @@
 			<discoveryyear>2004</discoveryyear>
 			<temperature>159.6</temperature>
 			<minimal-code>JF</minimal-code>
+			<full-code>J0.4F3</full-code>
 		</planet>
 		<name>HD 202206</name>
 		<temperature>5750.0</temperature>

@@ -25,6 +25,7 @@
 			<discoveryyear>2008</discoveryyear>
 			<temperature>877.6</temperature>
 			<minimal-code>SR</minimal-code>
+			<full-code>S-0.2R1</full-code>
 		</planet>
 		<planet>
 			<name>HD 102272 c</name>
@@ -37,7 +38,8 @@
 			<lastupdate>08/06/12</lastupdate>
 			<discoveryyear>2008</discoveryyear>
 			<temperature>530.8</temperature>
-			<minimal-code>JK</minimal-code>
+			<minimal-code>JG</minimal-code>
+			<full-code>J0.2G7</full-code>
 		</planet>
 		<name>HD 102272</name>
 		<temperature>4908.0</temperature>

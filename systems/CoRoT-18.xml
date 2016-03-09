@@ -32,6 +32,7 @@
 			<temperature>1396.0</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>JR</minimal-code>
+			<full-code>J-1.5R1</full-code>
 		</planet>
 		<name>CoRoT-18</name>
 		<temperature>5440.0</temperature>

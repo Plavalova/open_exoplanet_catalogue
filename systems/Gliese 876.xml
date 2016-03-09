@@ -34,6 +34,7 @@
 			<discoveryyear>2000</discoveryyear>
 			<temperature>194.2</temperature>
 			<minimal-code>JW</minimal-code>
+			<full-code>J-0.7W0</full-code>
 		</planet>
 		<planet>
 			<name>Gliese 876 c</name>
@@ -54,6 +55,7 @@
 			<discoveryyear>2000</discoveryyear>
 			<temperature>245.2</temperature>
 			<minimal-code>JW</minimal-code>
+			<full-code>J-0.9W3</full-code>
 		</planet>
 		<planet>
 			<name>Gliese 876 d</name>
@@ -73,7 +75,8 @@
 			<lastupdate>13/05/11</lastupdate>
 			<discoveryyear>2005</discoveryyear>
 			<temperature>612.8</temperature>
-			<minimal-code>EK</minimal-code>
+			<minimal-code>EG</minimal-code>
+			<full-code>E-1.7G2</full-code>
 		</planet>
 		<planet>
 			<name>Gliese 876 e</name>
@@ -97,6 +100,7 @@
 
 Credit: Jonah Gallagher.</imagedescription>
 			<minimal-code>NF</minimal-code>
+			<full-code>N-0.5F1</full-code>
 		</planet>
 		<name>Gliese 876</name>
 		<temperature>3350.0</temperature>

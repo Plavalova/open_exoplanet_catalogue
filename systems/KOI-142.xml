@@ -39,6 +39,7 @@
 			<discoveryyear>2013</discoveryyear>
 			<istransiting>1</istransiting>
 			<minimal-code>ER</minimal-code>
+			<full-code>E-1.0R1</full-code>
 		</planet>
 		<planet>
 			<name>KOI-142 c</name>
@@ -57,7 +58,8 @@
 			<discoverymethod>timing</discoverymethod>
 			<lastupdate>13/04/17</lastupdate>
 			<discoveryyear>2013</discoveryyear>
-			<minimal-code>JK</minimal-code>
+			<minimal-code>JG</minimal-code>
+			<full-code>J-0.8G1</full-code>
 		</planet>
 	</star>
 </system>

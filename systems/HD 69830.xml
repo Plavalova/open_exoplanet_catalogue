@@ -26,6 +26,7 @@
 			<discoveryyear>2006</discoveryyear>
 			<temperature>801.2</temperature>
 			<minimal-code>NR</minimal-code>
+			<full-code>N-1.1R1</full-code>
 		</planet>
 		<planet>
 			<name>HD 69830 c</name>
@@ -39,7 +40,8 @@
 			<lastupdate>10/10/19</lastupdate>
 			<discoveryyear>2006</discoveryyear>
 			<temperature>520.3</temperature>
-			<minimal-code>NK</minimal-code>
+			<minimal-code>NG</minimal-code>
+			<full-code>N-0.7G1</full-code>
 		</planet>
 		<planet>
 			<name>HD 69830 d</name>
@@ -54,6 +56,7 @@
 			<discoveryyear>2006</discoveryyear>
 			<temperature>282.9</temperature>
 			<minimal-code>NW</minimal-code>
+			<full-code>N-0.2W1</full-code>
 		</planet>
 		<name>HD 69830</name>
 		<temperature>5385.0</temperature>

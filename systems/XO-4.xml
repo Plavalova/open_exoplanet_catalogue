@@ -31,6 +31,7 @@
 			<temperature>1328.2</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>JR</minimal-code>
+			<full-code>J-1.3R0</full-code>
 		</planet>
 		<name>XO-4</name>
 		<temperature>5700.0</temperature>

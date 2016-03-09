@@ -38,6 +38,7 @@
 			<transittime errorminus="0.0003" errorplus="0.0003" unit="BJD">2454417.9085</transittime>
 			<istransiting>1</istransiting>
 			<minimal-code>JR</minimal-code>
+			<full-code>J-1.3R0</full-code>
 		</planet>
 		<temperature>6350.0</temperature>
 	</star>

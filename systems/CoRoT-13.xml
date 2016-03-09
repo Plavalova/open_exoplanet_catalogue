@@ -34,6 +34,7 @@
 			<temperature>1166.5</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>JR</minimal-code>
+			<full-code>J-1.3R0</full-code>
 		</planet>
 		<name>CoRoT-13</name>
 		<temperature>5945.0</temperature>

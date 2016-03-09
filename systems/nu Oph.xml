@@ -27,7 +27,8 @@
 			<lastupdate>11/01/05</lastupdate>
 			<discoveryyear>2004</discoveryyear>
 			<temperature>611.9</temperature>
-			<minimal-code>DK</minimal-code>
+			<minimal-code>DG</minimal-code>
+			<full-code>D0.3G1</full-code>
 		</planet>
 		<planet>
 			<name>nu Oph c</name>
@@ -40,7 +41,8 @@
 			<lastupdate>11/01/05</lastupdate>
 			<discoveryyear>2010</discoveryyear>
 			<temperature>341.2</temperature>
-			<minimal-code>DK</minimal-code>
+			<minimal-code>DG</minimal-code>
+			<full-code>D0.8G2</full-code>
 		</planet>
 	</star>
 </system>

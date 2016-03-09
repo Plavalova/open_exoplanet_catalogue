@@ -31,6 +31,7 @@
 			<transittime errorminus="0.00020" errorplus="0.00020" unit="BJD">2454801.16943</transittime>
 			<istransiting>1</istransiting>
 			<minimal-code>NR</minimal-code>
+			<full-code>N-1.1R3</full-code>
 		</planet>
 		<planet>
 			<name>HAT-P-17 c</name>
@@ -48,6 +49,7 @@
 			<temperature>127.5</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>JF</minimal-code>
+			<full-code>J0.4F1</full-code>
 		</planet>
 		<name>HAT-P-17</name>
 		<temperature>5246.0</temperature>

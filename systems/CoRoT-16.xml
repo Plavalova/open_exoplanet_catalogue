@@ -32,6 +32,7 @@
 			<temperature>1085.5</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>NR</minimal-code>
+			<full-code>N-1.2R3</full-code>
 		</planet>
 		<name>CoRoT-16</name>
 		<temperature>5650.0</temperature>

@@ -36,6 +36,7 @@
 			<temperature>1181.7</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>ER</minimal-code>
+			<full-code>E-1.3R0</full-code>
 		</planet>
 		<planet>
 			<name>Kepler-18 c</name>
@@ -58,6 +59,7 @@
 			<temperature>911.1</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>NR</minimal-code>
+			<full-code>N-1.1R0</full-code>
 		</planet>
 		<planet>
 			<name>Kepler-18 d</name>
@@ -79,6 +81,7 @@
 			<temperature>729.8</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>NR</minimal-code>
+			<full-code>N-0.9R0</full-code>
 		</planet>
 	</star>
 </system>

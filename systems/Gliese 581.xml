@@ -30,7 +30,8 @@
 			<lastupdate>14/07/04</lastupdate>
 			<discoveryyear>2005</discoveryyear>
 			<temperature>419.2</temperature>
-			<minimal-code>NK</minimal-code>
+			<minimal-code>NG</minimal-code>
+			<full-code>N-1.4G0</full-code>
 		</planet>
 		<planet>
 			<name>Gliese 581 c</name>
@@ -47,7 +48,8 @@
 			<lastupdate>14/07/04</lastupdate>
 			<discoveryyear>2007</discoveryyear>
 			<temperature>312.7</temperature>
-			<minimal-code>EK</minimal-code>
+			<minimal-code>EG</minimal-code>
+			<full-code>E-1.1G1</full-code>
 		</planet>
 		<planet>
 			<name>Gliese 581 d</name>
@@ -65,6 +67,7 @@
 			<discoveryyear>2007</discoveryyear>
 			<temperature>181.0</temperature>
 			<minimal-code>EW</minimal-code>
+			<full-code>E-0.7W3</full-code>
 		</planet>
 		<planet>
 			<name>Gliese 581 e</name>
@@ -81,7 +84,8 @@
 			<lastupdate>14/07/04</lastupdate>
 			<discoveryyear>2009</discoveryyear>
 			<temperature>500.8</temperature>
-			<minimal-code>EK</minimal-code>
+			<minimal-code>EG</minimal-code>
+			<full-code>E-1.6G1</full-code>
 		</planet>
 		<planet>
 			<name>Gliese 581 f</name>
@@ -98,6 +102,7 @@
 			<lastupdate>14/07/04</lastupdate>
 			<discoveryyear>2010</discoveryyear>
 			<minimal-code>EF</minimal-code>
+			<full-code>E-0.1F0</full-code>
 		</planet>
 		<planet>
 			<name>Gliese 581 g</name>
@@ -115,6 +120,7 @@
 			<discoveryyear>2010</discoveryyear>
 			<temperature>230.9</temperature>
 			<minimal-code>EW</minimal-code>
+			<full-code>E-0.8W0</full-code>
 		</planet>
 		<name>Gliese 581</name>
 		<temperature>3498.0</temperature>

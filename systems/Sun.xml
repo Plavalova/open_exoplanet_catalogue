@@ -23,7 +23,8 @@
 			<longitude>252.25166724</longitude>
 			<description>Mercury is the innermost planet in the Solar System.</description>
 			<lastupdate>12/01/01</lastupdate>
-			<minimal-code>MK</minimal-code>
+			<minimal-code>MG</minimal-code>
+			<full-code>M-0.4G2</full-code>
 		</planet>
 		<planet>
 			<name>Venus</name>
@@ -40,7 +41,8 @@
 			<longitude>181.97970850</longitude>
 			<description>Venus is the second planet from the Sun.</description>
 			<lastupdate>12/01/01</lastupdate>
-			<minimal-code>EK</minimal-code>
+			<minimal-code>EG</minimal-code>
+			<full-code>E-0.1G0</full-code>
 		</planet>
 		<planet>
 			<name>Earth</name>
@@ -58,6 +60,7 @@
 			<description>Earth is the only known planet able to sustain life.</description>
 			<lastupdate>12/01/01</lastupdate>
 			<minimal-code>EW</minimal-code>
+			<full-code>E0.0W0</full-code>
 		</planet>
 		<planet>
 			<name>Mars</name>
@@ -75,6 +78,7 @@
 			<description>Mars is named after the Roman god of war and often called the red planet.</description>
 			<lastupdate>12/01/01</lastupdate>
 			<minimal-code>MW</minimal-code>
+			<full-code>M0.2W1</full-code>
 		</planet>
 		<planet>
 			<name>Jupiter</name>
@@ -92,6 +96,7 @@
 			<description>Jupiter is two and a half times the mass of all the other planets in the Solar System.</description>
 			<lastupdate>12/01/01</lastupdate>
 			<minimal-code>JF</minimal-code>
+			<full-code>J0.7F0</full-code>
 		</planet>
 		<planet>
 			<name>Saturn</name>
@@ -109,6 +114,7 @@
 			<description>Saturn is best known for its extensive ring system.</description>
 			<lastupdate>12/01/01</lastupdate>
 			<minimal-code>NF</minimal-code>
+			<full-code>N1.0F1</full-code>
 		</planet>
 		<planet>
 			<name>Uranus</name>
@@ -127,6 +133,7 @@
 			<lastupdate>12/01/01</lastupdate>
 			<discoveryyear>1781</discoveryyear>
 			<minimal-code>NF</minimal-code>
+			<full-code>N1.3F0</full-code>
 		</planet>
 		<planet>
 			<name>Neptune</name>
@@ -145,6 +152,7 @@
 			<lastupdate>12/01/01</lastupdate>
 			<discoveryyear>1846</discoveryyear>
 			<minimal-code>NF</minimal-code>
+			<full-code>N1.5F0</full-code>
 		</planet>
 		<planet>
 			<name>Pluto</name>
@@ -163,6 +171,7 @@
 			<lastupdate>12/01/01</lastupdate>
 			<discoveryyear>1930</discoveryyear>
 			<minimal-code>MF</minimal-code>
+			<full-code>M1.6F2</full-code>
 		</planet>
 	</star>
 </system>

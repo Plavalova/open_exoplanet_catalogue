@@ -41,6 +41,7 @@
 Image credit: NASA/Tim Pyle</imagedescription>
 			<istransiting>1</istransiting>
 			<minimal-code>ER</minimal-code>
+			<full-code>E-1.0R0</full-code>
 		</planet>
 		<planet>
 			<name>Kepler-11 c</name>
@@ -66,6 +67,7 @@ Image credit: NASA/Tim Pyle</imagedescription>
 Image credit: NASA/Tim Pyle</imagedescription>
 			<istransiting>1</istransiting>
 			<minimal-code>ER</minimal-code>
+			<full-code>E-1.0R0</full-code>
 		</planet>
 		<planet>
 			<name>Kepler-11 d</name>
@@ -91,6 +93,7 @@ Image credit: NASA/Tim Pyle</imagedescription>
 Image credit: NASA/Tim Pyle</imagedescription>
 			<istransiting>1</istransiting>
 			<minimal-code>ER</minimal-code>
+			<full-code>E-0.8R0</full-code>
 		</planet>
 		<planet>
 			<name>Kepler-11 e</name>
@@ -115,7 +118,8 @@ Image credit: NASA/Tim Pyle</imagedescription>
 		
 Image credit: NASA/Tim Pyle</imagedescription>
 			<istransiting>1</istransiting>
-			<minimal-code>EK</minimal-code>
+			<minimal-code>EG</minimal-code>
+			<full-code>E-0.7G0</full-code>
 		</planet>
 		<planet>
 			<name>Kepler-11 f</name>
@@ -140,7 +144,8 @@ Image credit: NASA/Tim Pyle</imagedescription>
 		
 Image credit: NASA/Tim Pyle</imagedescription>
 			<istransiting>1</istransiting>
-			<minimal-code>EK</minimal-code>
+			<minimal-code>EG</minimal-code>
+			<full-code>E-0.6G0</full-code>
 		</planet>
 		<planet>
 			<name>Kepler-11 g</name>
@@ -165,7 +170,8 @@ Image credit: NASA/Tim Pyle</imagedescription>
 		
 Image credit: NASA/Tim Pyle</imagedescription>
 			<istransiting>1</istransiting>
-			<minimal-code>NK</minimal-code>
+			<minimal-code>NG</minimal-code>
+			<full-code>N-0.3G2</full-code>
 		</planet>
 	</star>
 </system>

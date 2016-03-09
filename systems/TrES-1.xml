@@ -34,6 +34,7 @@
 			<description>TrES-1 b orbits an orange dwarf star in the constellation of Lyra. It belongs to the class of Hot Jupiters</description>
 			<istransiting>1</istransiting>
 			<minimal-code>JR</minimal-code>
+			<full-code>J-1.4R0</full-code>
 		</planet>
 	</star>
 </system>

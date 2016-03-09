@@ -27,6 +27,7 @@
 			<temperature>1211.0</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>JR</minimal-code>
+			<full-code>J-1.6R0</full-code>
 		</planet>
 		<name>OGLE-TR-113</name>
 		<temperature>4752.0</temperature>

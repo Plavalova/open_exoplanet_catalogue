@@ -32,6 +32,7 @@
 			<lastupdate>11/11/23</lastupdate>
 			<discoveryyear>2006</discoveryyear>
 			<minimal-code>JF</minimal-code>
+			<full-code>J0.4F0</full-code>
 		</planet>
 		<planet>
 			<name>Gliese 849 c</name>
@@ -45,6 +46,7 @@
 			<discoverymethod>RV</discoverymethod>
 			<discoveryyear>2013</discoveryyear>
 			<minimal-code>JF</minimal-code>
+			<full-code>J0.8F3</full-code>
 		</planet>
 	</star>
 </system>

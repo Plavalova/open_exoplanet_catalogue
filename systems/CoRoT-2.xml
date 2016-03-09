@@ -33,6 +33,7 @@
 			<transittime errorminus="0.00014" errorplus="0.00014" unit="BJD">2454237.53562</transittime>
 			<istransiting>1</istransiting>
 			<minimal-code>JR</minimal-code>
+			<full-code>J-1.6R0</full-code>
 		</planet>
 		<name>CoRoT-2</name>
 		<temperature>5575.0</temperature>

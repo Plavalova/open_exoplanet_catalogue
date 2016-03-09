@@ -42,6 +42,7 @@
 			<temperature>1289.9</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>JR</minimal-code>
+			<full-code>J-1.5R0</full-code>
 		</planet>
 		<temperature>5400.0</temperature>
 	</star>

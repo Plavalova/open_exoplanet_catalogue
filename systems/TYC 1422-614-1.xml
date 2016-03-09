@@ -32,6 +32,7 @@
 			<discoveryyear>2014</discoveryyear>
 			<istransiting>1</istransiting>
 			<minimal-code>JR</minimal-code>
+			<full-code>J-0.2R1</full-code>
 		</planet>
 		<planet>
 			<name>TYC 1422-614-1 c</name>
@@ -47,7 +48,8 @@
 			<lastupdate>14/10/22</lastupdate>
 			<discoveryyear>2014</discoveryyear>
 			<istransiting>1</istransiting>
-			<minimal-code>SK</minimal-code>
+			<minimal-code>SG</minimal-code>
+			<full-code>S0.1G0</full-code>
 		</planet>
 	</star>
 </system>

@@ -38,6 +38,7 @@
 			<temperature errorminus="44" errorplus="96">2169</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>ER</minimal-code>
+			<full-code>E-1.8R0</full-code>
 		</planet>
 		<planet>
 			<name>Kepler-10 c</name>
@@ -59,7 +60,8 @@
 			<discoveryyear>2011</discoveryyear>
 			<temperature errorminus="17" errorplus="50">584</temperature>
 			<istransiting>1</istransiting>
-			<minimal-code>NK</minimal-code>
+			<minimal-code>NG</minimal-code>
+			<full-code>N-0.6G0</full-code>
 		</planet>
 	</star>
 </system>

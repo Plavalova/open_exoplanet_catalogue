@@ -26,7 +26,8 @@
 			<lastupdate>14/03/03</lastupdate>
 			<discoveryyear>2002</discoveryyear>
 			<temperature>369.5</temperature>
-			<minimal-code>JK</minimal-code>
+			<minimal-code>JG</minimal-code>
+			<full-code>J-0.2G3</full-code>
 		</planet>
 		<planet>
 			<name>HD 73526 c</name>
@@ -40,7 +41,8 @@
 			<lastupdate>14/03/03</lastupdate>
 			<discoveryyear>2006</discoveryyear>
 			<temperature>293.3</temperature>
-			<minimal-code>JK</minimal-code>
+			<minimal-code>JG</minimal-code>
+			<full-code>J0.0G2</full-code>
 		</planet>
 		<name>HD 73526</name>
 		<temperature>5590.0</temperature>

@@ -31,6 +31,7 @@
 			<temperature>975.6</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>JR</minimal-code>
+			<full-code>J-1.0R0</full-code>
 		</planet>
 		<name>CoRoT-4</name>
 		<temperature>6190.0</temperature>

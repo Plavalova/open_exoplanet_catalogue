@@ -33,7 +33,8 @@
 			<discoveryyear>2010</discoveryyear>
 			<temperature>600.8</temperature>
 			<istransiting>1</istransiting>
-			<minimal-code>JK</minimal-code>
+			<minimal-code>JG</minimal-code>
+			<full-code>J-1.0G5</full-code>
 		</planet>
 		<name>CoRoT-10</name>
 		<temperature>5075.0</temperature>

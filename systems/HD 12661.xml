@@ -26,7 +26,8 @@
 			<lastupdate>11/01/04</lastupdate>
 			<discoveryyear>2000</discoveryyear>
 			<temperature>291.4</temperature>
-			<minimal-code>JK</minimal-code>
+			<minimal-code>JG</minimal-code>
+			<full-code>J-0.1G4</full-code>
 		</planet>
 		<planet>
 			<name>HD 12661 c</name>
@@ -40,6 +41,7 @@
 			<discoveryyear>2002</discoveryyear>
 			<temperature>167.5</temperature>
 			<minimal-code>JW</minimal-code>
+			<full-code>J0.4W0</full-code>
 		</planet>
 		<name>HD 12661</name>
 		<temperature>5742.0</temperature>

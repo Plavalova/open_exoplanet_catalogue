@@ -44,6 +44,7 @@
 				<description>The planet TrES-4 b was discovered by the Trans-Atlantic Exoplanet Survey and is located in the constellation Hercules. The host star is a member of a binary system.</description>
 				<istransiting>1</istransiting>
 				<minimal-code>JR</minimal-code>
+				<full-code>J-1.3R0</full-code>
 			</planet>
 		</star>
 		<star>

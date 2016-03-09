@@ -26,7 +26,8 @@
 			<lastupdate>11/09/15</lastupdate>
 			<discoveryyear>2011</discoveryyear>
 			<temperature>499.8</temperature>
-			<minimal-code>JK</minimal-code>
+			<minimal-code>JG</minimal-code>
+			<full-code>J-0.4G7</full-code>
 		</planet>
 		<planet>
 			<name>HD 163607 c</name>
@@ -41,6 +42,7 @@
 			<discoveryyear>2011</discoveryyear>
 			<temperature>200.4</temperature>
 			<minimal-code>JW</minimal-code>
+			<full-code>J0.4W1</full-code>
 		</planet>
 		<name>HD 163607</name>
 		<temperature>5543.0</temperature>

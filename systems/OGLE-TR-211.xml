@@ -28,6 +28,7 @@
 			<temperature>1581.5</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>JR</minimal-code>
+			<full-code>J-1.3R0</full-code>
 		</planet>
 		<name>OGLE-TR-211</name>
 		<temperature>6325.0</temperature>

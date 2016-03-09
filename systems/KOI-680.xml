@@ -38,6 +38,7 @@
 			<temperature errorminus="70" errorplus="70">1729</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>JR</minimal-code>
+			<full-code>J-1.0R0</full-code>
 		</planet>
 	</star>
 </system>

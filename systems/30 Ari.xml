@@ -69,7 +69,8 @@
 					<discoveryyear>2009</discoveryyear>
 					<temperature>300.2</temperature>
 					<list>Planets in binary systems, S-type</list>
-					<minimal-code>SK</minimal-code>
+					<minimal-code>SG</minimal-code>
+					<full-code>S-0.0G3</full-code>
 				</planet>
 				<temperature>6424</temperature>
 			</star>

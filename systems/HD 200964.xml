@@ -24,7 +24,8 @@
 			<lastupdate>10/07/28</lastupdate>
 			<discoveryyear>2010</discoveryyear>
 			<temperature>373.1</temperature>
-			<minimal-code>JK</minimal-code>
+			<minimal-code>JG</minimal-code>
+			<full-code>J0.2G0</full-code>
 		</planet>
 		<planet>
 			<name>HD 200964 c</name>
@@ -37,7 +38,8 @@
 			<lastupdate>10/07/28</lastupdate>
 			<discoveryyear>2010</discoveryyear>
 			<temperature>337.4</temperature>
-			<minimal-code>JK</minimal-code>
+			<minimal-code>JG</minimal-code>
+			<full-code>J0.3G2</full-code>
 		</planet>
 		<name>HD 200964</name>
 		<temperature>5164.0</temperature>

@@ -38,6 +38,7 @@
 			<discoveryyear>2013</discoveryyear>
 			<istransiting>1</istransiting>
 			<minimal-code>NR</minimal-code>
+			<full-code>N-1.3R1</full-code>
 		</planet>
 		<planet>
 			<name>HAT-P-44 c</name>
@@ -54,6 +55,7 @@
 			<discoveryyear>2013</discoveryyear>
 			<istransiting>1</istransiting>
 			<minimal-code>JW</minimal-code>
+			<full-code>J-0.2W0</full-code>
 		</planet>
 	</star>
 </system>

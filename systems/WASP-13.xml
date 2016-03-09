@@ -30,6 +30,7 @@
 			<temperature errorminus="100" errorplus="100">1203.3</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>NR</minimal-code>
+			<full-code>N-1.3R0</full-code>
 		</planet>
 		<name>WASP-13</name>
 		<temperature errorminus="48" errorplus="48">5989</temperature>

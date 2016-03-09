@@ -23,6 +23,8 @@
 			<discoveryyear>2011</discoveryyear>
 			<temperature>5375.9</temperature>
 			<minimal-code>JP</minimal-code>
+			<d-temp>-1.0</d-temp>
+			<dyson-temperature>-1.0</dyson-temperature>
 		</planet>
 		<temperature>5700.0</temperature>
 	</star>

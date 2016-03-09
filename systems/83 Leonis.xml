@@ -41,7 +41,8 @@
 				<discoveryyear>2004</discoveryyear>
 				<list>Planets in binary systems, S-type</list>
 				<temperature>581.0</temperature>
-				<minimal-code>NK</minimal-code>
+				<minimal-code>NG</minimal-code>
+				<full-code>N-0.9G3</full-code>
 			</planet>
 			<planet>
 				<name>83 Leonis B c</name>
@@ -57,6 +58,7 @@
 				<discoveryyear>2010</discoveryyear>
 				<list>Planets in binary systems, S-type</list>
 				<minimal-code>NF</minimal-code>
+				<full-code>N0.7F1</full-code>
 			</planet>
 		</star>
 		<star>

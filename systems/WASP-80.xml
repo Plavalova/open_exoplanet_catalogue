@@ -42,6 +42,7 @@
 			<temperature>600</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>NR</minimal-code>
+			<full-code>N-1.5R1</full-code>
 		</planet>
 	</star>
 </system>

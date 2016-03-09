@@ -30,6 +30,7 @@
 			<transittime errorminus="0.00061" errorplus="0.00060" unit="HJD">2456064.86356</transittime>
 			<istransiting>1</istransiting>
 			<minimal-code>JR</minimal-code>
+			<full-code>J-1.2R0</full-code>
 		</planet>
 	</star>
 </system>

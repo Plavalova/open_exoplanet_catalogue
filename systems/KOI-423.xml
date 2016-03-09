@@ -40,6 +40,7 @@
 			<discoveryyear>2011</discoveryyear>
 			<istransiting>1</istransiting>
 			<minimal-code>DR</minimal-code>
+			<full-code>D-0.8R0</full-code>
 		</planet>
 	</star>
 </system>

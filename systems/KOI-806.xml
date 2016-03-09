@@ -39,7 +39,8 @@
 			<discoveryyear>2012</discoveryyear>
 			<temperature>556.9</temperature>
 			<istransiting>1</istransiting>
-			<minimal-code>NK</minimal-code>
+			<minimal-code>NG</minimal-code>
+			<full-code>N-0.7G0</full-code>
 		</planet>
 		<planet>
 			<name>KOI-806.02</name>
@@ -62,7 +63,8 @@
 			<discoveryyear>2012</discoveryyear>
 			<temperature>431.4</temperature>
 			<istransiting>1</istransiting>
-			<minimal-code>JK</minimal-code>
+			<minimal-code>JG</minimal-code>
+			<full-code>J-0.5G0</full-code>
 		</planet>
 		<planet>
 			<name>KOI-806.01</name>
@@ -84,7 +86,8 @@
 			<discoveryyear>2012</discoveryyear>
 			<temperature>334.2</temperature>
 			<istransiting>1</istransiting>
-			<minimal-code>NK</minimal-code>
+			<minimal-code>NG</minimal-code>
+			<full-code>N-0.3G0</full-code>
 		</planet>
 	</star>
 </system>

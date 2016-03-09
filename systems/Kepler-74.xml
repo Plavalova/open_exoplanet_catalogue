@@ -44,6 +44,7 @@
 			<discoveryyear>2012</discoveryyear>
 			<istransiting>1</istransiting>
 			<minimal-code>JR</minimal-code>
+			<full-code>J-1.1R0</full-code>
 		</planet>
 	</star>
 </system>

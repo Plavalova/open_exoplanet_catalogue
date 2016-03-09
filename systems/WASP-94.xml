@@ -34,6 +34,7 @@
 				<discoveryyear>2014</discoveryyear>
 				<list>Planets in binary systems, S-type</list>
 				<minimal-code>NR</minimal-code>
+				<full-code>N-1.3R1</full-code>
 			</planet>
 		</star>
 		<star>
@@ -60,6 +61,7 @@
 				<discoveryyear>2014</discoveryyear>
 				<list>Planets in binary systems, S-type</list>
 				<minimal-code>JR</minimal-code>
+				<full-code>J-1.5R0</full-code>
 			</planet>
 		</star>
 	</binary>

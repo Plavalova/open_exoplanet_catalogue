@@ -31,6 +31,7 @@
 			<transittime errorminus="0.00054" errorplus="0.00054" unit="BJD">2455813.17584</transittime>
 			<istransiting>1</istransiting>
 			<minimal-code>JR</minimal-code>
+			<full-code>J-1.2R1</full-code>
 		</planet>
 		<name>HAT-P-40</name>
 		<temperature>6080.0</temperature>

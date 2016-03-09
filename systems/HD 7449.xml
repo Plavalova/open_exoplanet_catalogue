@@ -26,6 +26,7 @@
 			<discoveryyear>2011</discoveryyear>
 			<temperature>166.9</temperature>
 			<minimal-code>JW</minimal-code>
+			<full-code>J0.4W8</full-code>
 		</planet>
 		<planet>
 			<name>HD 7449 c</name>
@@ -40,6 +41,7 @@
 			<discoveryyear>2011</discoveryyear>
 			<temperature>117.6</temperature>
 			<minimal-code>JF</minimal-code>
+			<full-code>J0.7F5</full-code>
 		</planet>
 		<name>HD 7449</name>
 		<temperature>6024.0</temperature>

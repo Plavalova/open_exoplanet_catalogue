@@ -40,6 +40,7 @@
 			<discoveryyear>2013</discoveryyear>
 			<istransiting>1</istransiting>
 			<minimal-code>JR</minimal-code>
+			<full-code>J-1.3R3</full-code>
 		</planet>
 	</star>
 </system>

@@ -37,6 +37,7 @@
 			<temperature>1486</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>NR</minimal-code>
+			<full-code>N-1.3R3</full-code>
 		</planet>
 		<planet>
 			<name>Kepler-89 c</name>
@@ -59,6 +60,7 @@
 			<temperature>1012</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>NR</minimal-code>
+			<full-code>N-1.0R4</full-code>
 		</planet>
 		<planet>
 			<name>Kepler-89 d</name>
@@ -81,6 +83,7 @@
 			<temperature>806</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>NR</minimal-code>
+			<full-code>N-0.8R0</full-code>
 		</planet>
 		<planet>
 			<name>Kepler-89 e</name>
@@ -102,7 +105,8 @@
 			<discoveryyear>2012</discoveryyear>
 			<temperature>584</temperature>
 			<istransiting>1</istransiting>
-			<minimal-code>NK</minimal-code>
+			<minimal-code>NG</minimal-code>
+			<full-code>N-0.5G0</full-code>
 		</planet>
 	</star>
 </system>

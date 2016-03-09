@@ -51,7 +51,8 @@
 			<eccentricity>0.015</eccentricity>
 			<semimajoraxis>0.27990</semimajoraxis>
 			<istransiting>1</istransiting>
-			<minimal-code>NK</minimal-code>
+			<minimal-code>NG</minimal-code>
+			<full-code>N-0.6G0</full-code>
 		</planet>
 		<planet>
 			<name>Kepler-46 d</name>

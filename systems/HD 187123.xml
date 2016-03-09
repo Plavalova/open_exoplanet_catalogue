@@ -27,6 +27,7 @@
 			<discoveryyear>1998</discoveryyear>
 			<temperature>1320.4</temperature>
 			<minimal-code>NR</minimal-code>
+			<full-code>N-1.4R0</full-code>
 		</planet>
 		<planet>
 			<name>HD 187123 c</name>
@@ -40,6 +41,7 @@
 			<discoveryyear>1998</discoveryyear>
 			<temperature>122.7</temperature>
 			<minimal-code>JF</minimal-code>
+			<full-code>J0.7F3</full-code>
 		</planet>
 		<name>HD 187123</name>
 		<temperature>5714.0</temperature>

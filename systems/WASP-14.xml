@@ -41,6 +41,7 @@
 				<istransiting>1</istransiting>
 				<list>Planets in binary systems, S-type</list>
 				<minimal-code>SR</minimal-code>
+				<full-code>S-1.4R1</full-code>
 			</planet>
 		</star>
 		<star>

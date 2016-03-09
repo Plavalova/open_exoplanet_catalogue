@@ -33,6 +33,7 @@
 			<temperature>910.6</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>NR</minimal-code>
+			<full-code>N-1.3R0</full-code>
 		</planet>
 		<name>WASP-29</name>
 		<temperature>4800.0</temperature>

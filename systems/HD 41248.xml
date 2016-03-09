@@ -27,7 +27,8 @@
 			<discoverymethod>RV</discoverymethod>
 			<lastupdate>13/04/30</lastupdate>
 			<discoveryyear>2013</discoveryyear>
-			<minimal-code>NK</minimal-code>
+			<minimal-code>NG</minimal-code>
+			<full-code>N-0.9G2</full-code>
 		</planet>
 		<planet>
 			<name>HD 41248 c</name>
@@ -40,7 +41,8 @@
 			<discoverymethod>RV</discoverymethod>
 			<lastupdate>13/04/30</lastupdate>
 			<discoveryyear>2013</discoveryyear>
-			<minimal-code>EK</minimal-code>
+			<minimal-code>EG</minimal-code>
+			<full-code>E-0.8G2</full-code>
 		</planet>
 	</star>
 </system>

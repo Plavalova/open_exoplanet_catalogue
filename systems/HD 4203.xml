@@ -32,6 +32,7 @@
 			<discoveryyear>2001</discoveryyear>
 			<temperature>263.9</temperature>
 			<minimal-code>JW</minimal-code>
+			<full-code>J0.1W5</full-code>
 		</planet>
 		<planet>
 			<name>HD 4203 c</name>
@@ -49,6 +50,7 @@
 			<lastupdate>14/03/11</lastupdate>
 			<discoveryyear>2014</discoveryyear>
 			<minimal-code>JF</minimal-code>
+			<full-code>J0.8F2</full-code>
 		</planet>
 		<name>HD 4203</name>
 		<temperature>5702.0</temperature>

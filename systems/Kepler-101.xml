@@ -40,6 +40,7 @@
 			<discoverymethod>transit</discoverymethod>
 			<istransiting>1</istransiting>
 			<minimal-code>NR</minimal-code>
+			<full-code>N-1.3R1</full-code>
 		</planet>
 		<planet>
 			<name>Kepler-101 c</name>
@@ -59,6 +60,7 @@
 			<discoverymethod>transit</discoverymethod>
 			<istransiting>1</istransiting>
 			<minimal-code>ER</minimal-code>
+			<full-code>E-1.2R0</full-code>
 		</planet>
 	</star>
 </system>

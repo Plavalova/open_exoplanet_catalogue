@@ -42,6 +42,7 @@
 				<list>Planets in binary systems, S-type</list>
 				<istransiting>1</istransiting>
 				<minimal-code>JR</minimal-code>
+				<full-code>J-1.6R0</full-code>
 			</planet>
 		</star>
 		<binary>

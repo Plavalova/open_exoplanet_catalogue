@@ -33,6 +33,7 @@
 			<temperature errorminus="80" errorplus="80">1270</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>JR</minimal-code>
+			<full-code>J-1.3R0</full-code>
 		</planet>
 		<temperature errorminus="150" errorplus="150">5800</temperature>
 	</star>

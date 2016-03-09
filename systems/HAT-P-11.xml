@@ -44,6 +44,7 @@
 			<transittime errorminus="0.00032" errorplus="0.00032" unit="BJD">2454605.89132</transittime>
 			<istransiting>1</istransiting>
 			<minimal-code>NR</minimal-code>
+			<full-code>N-1.3R2</full-code>
 		</planet>
 		<temperature>4780.0</temperature>
 	</star>

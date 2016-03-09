@@ -36,6 +36,7 @@
 				<list>Planets in binary systems, S-type</list>
 				<temperature>660.7</temperature>
 				<minimal-code>JR</minimal-code>
+				<full-code>J-0.9R0</full-code>
 			</planet>
 			<planet>
 				<name>55 Cnc c</name>
@@ -52,7 +53,8 @@
 				<discoveryyear>2002</discoveryyear>
 				<list>Planets in binary systems, S-type</list>
 				<temperature>453.8</temperature>
-				<minimal-code>NK</minimal-code>
+				<minimal-code>NG</minimal-code>
+				<full-code>N-0.6G0</full-code>
 			</planet>
 			<planet>
 				<name>55 Cnc d</name>
@@ -69,6 +71,7 @@
 				<discoveryyear>2002</discoveryyear>
 				<list>Planets in binary systems, S-type</list>
 				<minimal-code>JF</minimal-code>
+				<full-code>J0.7F0</full-code>
 			</planet>
 			<planet>
 				<name>55 Cnc e</name>
@@ -90,6 +93,7 @@
 				<transittime errorminus="0.0018" errorplus="0.0017" unit="BJD">2455962.0697</transittime>
 				<istransiting>1</istransiting>
 				<minimal-code>ER</minimal-code>
+				<full-code>E-1.8R0</full-code>
 			</planet>
 			<planet>
 				<name>55 Cnc f</name>
@@ -107,6 +111,7 @@
 				<list>Planets in binary systems, S-type</list>
 				<temperature>251.7</temperature>
 				<minimal-code>NW</minimal-code>
+				<full-code>N-0.1W3</full-code>
 			</planet>
 			<name>55 Cnc A</name>
 			<temperature>5196.0</temperature>

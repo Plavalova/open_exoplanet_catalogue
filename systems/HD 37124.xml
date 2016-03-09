@@ -26,7 +26,8 @@
 			<lastupdate>11/01/07</lastupdate>
 			<discoveryyear>1999</discoveryyear>
 			<temperature>306.6</temperature>
-			<minimal-code>JK</minimal-code>
+			<minimal-code>JG</minimal-code>
+			<full-code>J-0.3G1</full-code>
 		</planet>
 		<planet>
 			<name>HD 37124 c</name>
@@ -40,6 +41,7 @@
 			<discoveryyear>2005</discoveryyear>
 			<temperature>171.1</temperature>
 			<minimal-code>JW</minimal-code>
+			<full-code>J0.2W1</full-code>
 		</planet>
 		<planet>
 			<name>HD 37124 d</name>
@@ -53,6 +55,7 @@
 			<discoveryyear>2003</discoveryyear>
 			<temperature>133.5</temperature>
 			<minimal-code>JF</minimal-code>
+			<full-code>J0.4F2</full-code>
 		</planet>
 		<name>HD 37124</name>
 		<temperature>5610.0</temperature>

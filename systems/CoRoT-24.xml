@@ -35,6 +35,7 @@
 			<lastupdate>14/06/08</lastupdate>
 			<discoveryyear>2014</discoveryyear>
 			<minimal-code>ER</minimal-code>
+			<full-code>E-1.3R0</full-code>
 		</planet>
 		<planet>
 			<name>CoRoT-24 c</name>
@@ -54,6 +55,7 @@
 			<lastupdate>14/06/08</lastupdate>
 			<discoveryyear>2014</discoveryyear>
 			<minimal-code>NR</minimal-code>
+			<full-code>N-1.0R0</full-code>
 		</planet>
 	</star>
 </system>

@@ -39,6 +39,7 @@
 			<lastupdate>14/11/25</lastupdate>
 			<discoveryyear>2014</discoveryyear>
 			<minimal-code>NW</minimal-code>
+			<full-code>N-0.8W1</full-code>
 		</planet>
 		<planet>
 			<name>Gliese 3293 d</name>
@@ -59,6 +60,7 @@
 			<lastupdate>14/11/25</lastupdate>
 			<discoveryyear>2014</discoveryyear>
 			<minimal-code>NF</minimal-code>
+			<full-code>N-0.4F4</full-code>
 		</planet>
 		<planet>
 			<name>Gliese 3293 c</name>
@@ -79,6 +81,7 @@
 			<lastupdate>14/11/25</lastupdate>
 			<discoveryyear>2014</discoveryyear>
 			<minimal-code>EW</minimal-code>
+			<full-code>E-0.7W1</full-code>
 		</planet>
 	</star>
 </system>

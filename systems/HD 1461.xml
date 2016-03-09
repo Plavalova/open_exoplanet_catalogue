@@ -25,6 +25,7 @@
 			<discoveryyear>2009</discoveryyear>
 			<temperature>1054.8</temperature>
 			<minimal-code>ER</minimal-code>
+			<full-code>E-1.2R1</full-code>
 		</planet>
 		<planet>
 			<name>HD 1461 c</name>
@@ -39,6 +40,7 @@
 			<discoveryyear>2011</discoveryyear>
 			<temperature>795.9</temperature>
 			<minimal-code>ER</minimal-code>
+			<full-code>E-1.0R0</full-code>
 		</planet>
 		<name>HD 1461</name>
 		<temperature>5765.0</temperature>

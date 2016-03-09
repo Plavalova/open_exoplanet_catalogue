@@ -33,6 +33,7 @@
 			<temperature>1135.0</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>NR</minimal-code>
+			<full-code>N-1.3R0</full-code>
 		</planet>
 		<name>WASP-25</name>
 		<temperature>5750.0</temperature>

@@ -30,6 +30,7 @@
 				<list>Planets in binary systems, S-type</list>
 				<temperature>112.3</temperature>
 				<minimal-code>SF</minimal-code>
+				<full-code>S0.5F5</full-code>
 			</planet>
 			<temperature>5382.0</temperature>
 		</star>

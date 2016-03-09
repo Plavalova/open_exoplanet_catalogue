@@ -26,7 +26,8 @@
 			<lastupdate>10/07/28</lastupdate>
 			<discoveryyear>2010</discoveryyear>
 			<temperature>430.8</temperature>
-			<minimal-code>JK</minimal-code>
+			<minimal-code>JG</minimal-code>
+			<full-code>J0.1G1</full-code>
 		</planet>
 		<planet>
 			<name>24 Sex c</name>
@@ -40,7 +41,8 @@
 			<lastupdate>10/07/28</lastupdate>
 			<discoveryyear>2010</discoveryyear>
 			<temperature>343.2</temperature>
-			<minimal-code>JK</minimal-code>
+			<minimal-code>JG</minimal-code>
+			<full-code>J0.3G3</full-code>
 		</planet>
 		<name>24 Sex</name>
 		<temperature>5098.0</temperature>

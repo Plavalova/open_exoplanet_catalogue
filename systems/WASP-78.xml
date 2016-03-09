@@ -35,6 +35,7 @@
 			<temperature>2006.7</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>JR</minimal-code>
+			<full-code>J-1.4R0</full-code>
 		</planet>
 		<name>WASP-78</name>
 		<temperature>6100.0</temperature>

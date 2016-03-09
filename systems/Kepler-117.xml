@@ -44,6 +44,7 @@
 			<discoverymethod>transit</discoverymethod>
 			<istransiting>1</istransiting>
 			<minimal-code>JR</minimal-code>
+			<full-code>J-0.6R0</full-code>
 		</planet>
 		<planet>
 			<name>Kepler-117 b</name>
@@ -67,6 +68,7 @@
 			<discoverymethod>transit</discoverymethod>
 			<istransiting>1</istransiting>
 			<minimal-code>NR</minimal-code>
+			<full-code>N-0.8R0</full-code>
 		</planet>
 	</star>
 </system>

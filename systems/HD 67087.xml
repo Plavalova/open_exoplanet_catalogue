@@ -31,7 +31,8 @@
 			<discoverymethod>RV</discoverymethod>
 			<lastupdate>15/03/26</lastupdate>
 			<discoveryyear>2015</discoveryyear>
-			<minimal-code>JK</minimal-code>
+			<minimal-code>JG</minimal-code>
+			<full-code>J0.0G2</full-code>
 		</planet>
 		<planet>
 			<name>HD 67087 c</name>
@@ -51,6 +52,7 @@
 			<lastupdate>15/03/26</lastupdate>
 			<discoveryyear>2015</discoveryyear>
 			<minimal-code>JW</minimal-code>
+			<full-code>J0.6W8</full-code>
 		</planet>
 		<name>HD 67087</name>
 		<name>BD+31 1735</name>

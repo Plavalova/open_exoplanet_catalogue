@@ -34,6 +34,7 @@
 			<temperature>783.1</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>NR</minimal-code>
+			<full-code>N-1.2R0</full-code>
 		</planet>
 		<name>CoRoT-8</name>
 		<temperature>5080.0</temperature>

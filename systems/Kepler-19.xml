@@ -34,6 +34,7 @@
 			<discoveryyear>2011</discoveryyear>
 			<istransiting>1</istransiting>
 			<minimal-code>NR</minimal-code>
+			<full-code>N-1.1R0</full-code>
 		</planet>
 		<planet>
 			<name>Kepler-19 c</name>

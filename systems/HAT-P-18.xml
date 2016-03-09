@@ -31,6 +31,7 @@
 			<transittime errorminus="0.2174" errorplus="0.2174" unit="BJD">2454715.02174</transittime>
 			<istransiting>1</istransiting>
 			<minimal-code>NR</minimal-code>
+			<full-code>N-1.3R0</full-code>
 		</planet>
 		<name>HAT-P-18</name>
 		<temperature errorminus="50" errorplus="50">4870</temperature>

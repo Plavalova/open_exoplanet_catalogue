@@ -36,7 +36,8 @@
 				<discoveryyear>2001</discoveryyear>
 				<list>Planets in binary systems, S-type</list>
 				<temperature>469.8</temperature>
-				<minimal-code>SK</minimal-code>
+				<minimal-code>SG</minimal-code>
+				<full-code>S-0.5G1</full-code>
 			</planet>
 			<temperature>5650.0</temperature>
 		</star>

@@ -36,7 +36,8 @@
 			<lastupdate>14/02/26</lastupdate>
 			<discoverymethod>transit</discoverymethod>
 			<istransiting>1</istransiting>
-			<minimal-code>EK</minimal-code>
+			<minimal-code>EG</minimal-code>
+			<full-code>E-0.7G0</full-code>
 		</planet>
 		<planet>
 			<name>PH3 c</name>
@@ -55,7 +56,8 @@
 			<lastupdate>14/11/01</lastupdate>
 			<discoverymethod>transit</discoverymethod>
 			<istransiting>1</istransiting>
-			<minimal-code>EK</minimal-code>
+			<minimal-code>EG</minimal-code>
+			<full-code>E-0.5G0</full-code>
 		</planet>
 		<planet>
 			<name>Kepler-289 c</name>
@@ -76,7 +78,8 @@
 			<lastupdate>14/02/26</lastupdate>
 			<discoverymethod>transit</discoverymethod>
 			<istransiting>1</istransiting>
-			<minimal-code>NK</minimal-code>
+			<minimal-code>NG</minimal-code>
+			<full-code>N-0.3G0</full-code>
 		</planet>
 	</star>
 </system>

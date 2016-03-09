@@ -51,6 +51,7 @@
 			<temperature>1305.2</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>NR</minimal-code>
+			<full-code>N-1.2R0</full-code>
 		</planet>
 		<temperature>6230.0</temperature>
 	</star>

@@ -34,6 +34,7 @@
 			<temperature>1550.7</temperature>
 			<istransiting>1</istransiting>
 			<minimal-code>JR</minimal-code>
+			<full-code>J-1.4R0</full-code>
 		</planet>
 		<name>HAT-P-4</name>
 		<temperature>5890.0</temperature>
